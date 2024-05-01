@@ -1,5 +1,5 @@
 # Site
-repository: sproogen/resume-theme
+repository: sproogen/modern-resume-theme
 favicon: images/favicon.ico
 
 # Content configuration version
@@ -12,7 +12,7 @@ email: guilherme@damoreira.com.br
 website: www.damoreira.com.br
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: never
 
 # Social links
 twitter_username: glhedamoreira
@@ -48,72 +48,194 @@ additional_links:
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Brett and I'm a senior network system administrator. As well as administrating systems I also have experience making software and web apps. I have worked at a number of companies gaining teamwork and leadership skills.
+  Hi, my name's Guilherme as a software engineer, I have a strong passion for technology, and I strive to ensure that my company's objectives are met by putting in my best efforts. I take pride in delivering high-quality projects on time and meeting the required standards.
 
-  I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  Throughout my career, I have been fortunate enough to work on diverse technology-based projects, including Project Management, Banking Systems, 3D rendering systems, systems integration, front-end and back-end development, recommendation systems, government loan systems, hospital management systems, among others. I have gained valuable experience in each of these areas, which has helped me become a better software engineer.
+
+  My academic qualifications include two postgraduate degrees, one in Project Management and another in Engineering in Data Science. I'm particularly interested in using my knowledge in both fields to lead cross-functional teams and maximize everyone's strengths to achieve shared goals.
+
+  I strongly believe in the importance of teamwork, and I enjoy working with people from different backgrounds to create something unique and meaningful. I believe that by combining technical skills with good management practices, we can build great things together.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-middle
-        title: Super awesome project
-        link: github.com/sproogen
-        # link_text: Project Website
-        additional_links:
-          - title:  sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-        quote: >
-          This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-        description: | # this will include new lines to allow paragraphs
-          I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+  # - title: Projects # Title for the section
+  #   layout: list # Type of content section (list/text)
+  #   content:
+  #     - layout: top-middle
+  #       title: Super awesome project
+  #       link: github.com/sproogen
+  #       # link_text: Project Website
+  #       additional_links:
+  #         - title:  sproogen/modern-resume-theme
+  #           icon: fab fa-github
+  #           url: github.com/sproogen/modern-resume-theme
+  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+  #         #   icon: fab fa-github
+  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+  #       quote: >
+  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+  #       description: | # this will include new lines to allow paragraphs
+  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: The Boring Company
-        link: boringcompany.com
-        # link_text: boringcompany.com
-        sub_title: Senior Network System Administrator
-        caption: November 2017 - Present
+        title: beyonnex.io
+        link: beyonnex.io
+        sub_title: Senior Software Engineer
+        caption: November 2023 - Present
         quote: >
-          Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+          We want to make real estate climate-friendly, comfortable and economical: To achieve this we digitise and network buildings on behalf of our customers and develop new, intelligent products.
         description: | # this will include new lines to allow paragraphs
-            Every company needs its networks properly administered and The Boring Compay is no exception. Digging holes is hard and I play my part making sure the whole company stays connected. I lead a team of 5 people and enjoy driving the company to try new technologies.
+            As a Software Engineer, my primary responsibility is to lead the development and implementation of a groundbreaking platform aimed at revolutionizing the real estate industry. Our platform aims to empower users by providing them with unprecedented control over their daily heat consumption, ensuring transparency in billing and facilitating cost-efficient adjustments to their environments.
+
+            Our vision involves modernizing the existing systems prevalent in Germany, which rely on cumbersome manual processes and intricate localized systems to calculate heat consumption. By leveraging the capabilities of IoT devices, we are pioneering real-time consumption calculation, empowering users to monitor and manage their heat production and associated costs effectively. This approach not only provides users with immediate insights but also offers estimations and enhances client autonomy.
+
+            In pursuit of our goals, we utilize cutting-edge technologies such as Kotlin, Quarkus, Kafka, Git, Jira, Gradle, and more. By harnessing these tools, we ensure that our platform remains at the forefront of innovation, delivering robust and scalable solutions to meet the evolving needs of our clients and stakeholders.
+
+      - layout: left
+        title: Oracle
+        link: oracle.com
+        sub_title: Senior Application Security Engineer
+        caption: July 2020 - November 2023
+        quote: >
+          We want to make NetSuite OneWorld achieve complete global visibility, real-time financial reporting, and accelerated monthly close, transforming our finance team's focus from data manipulation to value addition.
+        description: | # this will include new lines to allow paragraphs
+            As an Application Security Engineer, I am responsible for ensuring that the company's software applications are secure and free from vulnerabilities. This involves performing thorough code reviews and gap analysis, identifying potential security risks, and developing effective strategies to mitigate them. In addition, I work closely with developers to train them in best practices and ensure that they are incorporating security considerations into their code from the outset.
+
+            To streamline this process, I have developed a range of internal tools that automate code analysis and static analysis, enabling me to identify potential vulnerabilities more quickly and efficiently. These tools have proven invaluable in improving the overall security of Oracle's software applications and reducing the risk of breaches and other security incidents. Overall, my work as a Security Engineer is crucial in ensuring that Oracle's software is secure and resilient in the face of evolving security threats.
+
+      - layout: left
+        title: FREE NOW (formerly mytaxi)
+        link: free-now.com
+        sub_title: Senior Software Engineer
+        caption: December 2019 - May 2020
+        description: | # this will include new lines to allow paragraphs
+            As a Software Engineer, my primary responsibility is to ensure seamless operation of the driver management system. The application we have been developing is designed to manage the complete driver profile, ranging from private information of drivers, cars, and associated companies, to the registration, validation, and ongoing management of this information.
+
+            In the development process, we have adopted the Agile Scrum methodology to manage demands, prioritize tasks, and allocate resources. Our technology stack includes Java, Kotlin, RabbitMQ, AWS, Bamboo, Docker, Git, Maven, IntelliJ, JIRA, JUNIT, Kubernetes, PostgreSQL, Spring Boot, Spring Cloud, and Swagger.
+
+            My role in this project involves overseeing the development and maintenance of this complex system, ensuring that it is running efficiently and delivering the desired results. I work closely with my team to resolve technical issues, monitor the performance of the system, and make necessary improvements to ensure the smooth functioning of the driver management system.
+
+      - layout: left
+        title: CreativeDrive
+        link: https://creativedrive.com/
+        sub_title: Lead Software Engineer
+        caption: March 2016 - November 2019
+        description: | # this will include new lines to allow paragraphs
+            As a Technical Leader, my primary responsibility is to oversee the organization of tasks and demands, as well as the development of company systems. Our team has developed an application that streamlines the entire 3D rendering workflow, from managing demands to distributing them across our rendering systems and managing the assets generated by the processes.
+
+            The automation of the rendering process has significantly reduced the delivery time of 3D models, ensured standardization in delivery, and increased the flow of 3D rendered models. In the development process, we have adopted the Agile Scrum methodology to manage demands, prioritize tasks, and allocate resources.
+
+            Our technology stack includes a broad range of technologies, such as 3dsmax, Android Studio, Angular, Apache Kafka, AWS, Axon Framework, Bamboo, Circle-ci, Docker, Git, Gradle, IntelliJ, Java, Jenkins-ci, JIRA, JUNIT, Kubernetes, Maven, Maxscript, MongoDB, Python, Qt, Redis, Robot Framework, Spring Boot, and Swagger. As the technical leader, I work closely with the team to ensure efficient system development, resolve technical issues, and monitor the performance of the 3D rendering workflow system.As a technical leader, my primary responsibility is to oversee the organization of tasks and demands, as well as the development of company systems. Our team has developed an application that streamlines the entire 3D rendering workflow, from managing demands to distributing them across our rendering systems and managing the assets generated by the processes. The automation of the rendering process has significantly reduced the delivery time of 3D models, ensured standardization in delivery, and increased the flow of 3D rendered models. In the development process, we have adopted the Agile Scrum methodology to manage demands, prioritize tasks, and allocate resources. Our technology stack includes a broad range of technologies, such as 3dsmax, Android Studio, Angular, Apache Kafka, AWS, Axon Framework, Bamboo, Circle-ci, Docker, Git, Gradle, IntelliJ, Java, Jenkins-ci, JIRA, JUNIT, Kubernetes, Maven, Maxscript, MongoDB, Python, Qt, Redis, Robot Framework, Spring Boot, and Swagger. As the technical leader, I work closely with the team to ensure efficient system development, resolve technical issues, and monitor the performance of the 3D rendering workflow system.
+
+      - layout: left
+        title: Reticomm
+        link: https://reticomm.com/
+        sub_title: Chief Technology Officer
+        caption: March 2016 - November 2019
+        description: | # this will include new lines to allow paragraphs
+            As the CTO of the company, I am responsible for organizing the technical aspects of the organization, developing the system, and managing expectations with investors, in addition to managing the entire infrastructure.
+
+            Our team has developed a cutting-edge corporate communication system that enables customers to plan and manage their internal communication through the creation of digital content in the form of images, text, and videos. The system ensures that the communication is delivered to the target audience on the planned date and time, with metrics provided to the manager to measure the effectiveness of the communication.
+
+            Our clients have reported improved scheduling, better audience scaling, and a more effective approach to communication with their target audience.
+
+            To build this system, we used a diverse range of technologies, including Angular, AWS, Bamboo, Git, Java, JavaEE, JUNIT, Maven, PostgreSQL, Redis, Swagger, Tomcat, and Wildfly. As the CTO, I have overseen the development and implementation of this system, ensuring its successful integration with the company's infrastructure and meeting the expectations of both internal stakeholders and external investors.
+
+      - layout: left
+        title: Grupo Nexxera
+        link: https://www.nexxera.com/
+        sub_title: Senior Software Engineer
+        caption: September 2015 - February 2016
+        description: | # this will include new lines to allow paragraphs
+            As a Software Engineer I was brought in to develop an integrated enterprise solution that would centralize all internal applications into one platform. Our main goal was to create the Hive Platform, a unified solution that would combine all payment applications, including credit card solutions and other modules, in one place. This would help our customers by providing better solutions that would increase the efficiency of the company's operations.
+
+            We utilized cutting-edge technologies such as AngularJS, Cucumber, Hibernate, Java, JavaEE, JUNIT, MongoDB, OpenStack, Oracle, Python, RabbitMQ, Redis, Spring Boot, and Wildfly to develop the Hive Platform. Our team worked tirelessly to create a scalable and robust platform that would meet the needs of the company and its stakeholders. Although the product wasn't completed during my time at the company, I was confident that the solution would significantly impact the company's internal processes, and provide a better experience for our customers.
+
+      - layout: left
+        title: JExperts Tecnologia
+        link: https://www.jexperts.com.br/
+        sub_title: Senior Software Engineer
+        caption: June 2010 - August 2015
+        description: | # this will include new lines to allow paragraphs
+            As a technical leader with expertise in project management, I am accountable for overseeing the entire lifecycle of the platform, from its inception to its completion. My role involves managing the demands of the project and delegating tasks to my team, ensuring that the project is delivered on time and within budget.
+
+            I led the development of the Channel platform, which is designed to facilitate project management, program and portfolio management, and strategic planning, utilizing both PMBOK and Agile methodologies. Additionally, the platform utilizes Balanced Scorecard techniques, including Key Performance Indicators (KPIs) and risk management strategies, making it a valuable tool for our clients.
+
+            The Channel platform streamlines project planning and execution, generating significant value for our clients by reducing costs and improving predictability. The platform is built using a variety of cutting-edge technologies, including AngularJS, Cloud, Cucumber, Hibernate, Java, JavaEE, JUNIT, Oracle, PostgreSQL, Redis, SOAP, SQLServer, and Wildfly.
+
+      - layout: left
+        title: HMW Soluções Tecnológicas LTDA
+        sub_title: Co-Founder and Developer
+        caption: March 2010 - May 2010
+        description: | # this will include new lines to allow paragraphs
+            Worked as a Developer for a software system developed in collaboration with the Education and Culture Department, designed for hospital and process management. As a key member of the team, I was responsible for overseeing the platform's entire lifecycle, from the initial planning phases to its successful execution. I was also accountable for managing demands and delegating tasks to the team, ensuring that each team member was operating at maximum capacity and meeting all project deadlines.
+
+            Throughout the development process, we utilized cutting-edge technologies such as JBoss Seam, Hibernate, Java, JavaEE, JUNIT, Oracle, SOAP, and JBoss AS. Our team's collective expertise and attention to detail ensured that the platform was optimized for efficiency and effectiveness. Ultimately, this software solution facilitated the management of hospital processes and greatly enhanced operational efficiency for our clients in the healthcare industry.
+
+      - layout: left
+        title: Softplan Planejamento de Sistemas LTDA
+        link: https://www.softplan.com.br/
+        sub_title: Software Engineer
+        caption: March 2010 - May 2010
+        description: | # this will include new lines to allow paragraphs
+            I was recruited to spearhead the development of financial solutions that catered to public departments, such as the Inter-American Development Bank and the International Bank for Reconstruction and Development. In addition, I was tasked with creating bespoke solutions for the Ministry of Agrarian Development (MDA), which focused on planning, diagnosis, and loans for small and medium agrarian families.
+
+            To achieve these objectives, I employed a variety of cutting-edge technologies, including Java, JavaEE, Hibernate, DWR, Struts, JSF, JSP, Servlets, and relational databases such as Oracle, SQLServer, and PostgreSQL. This allowed me to deliver high-quality solutions that were scalable, efficient, and met the exacting requirements of our clients. Overall, my experience in developing financial solutions and custom applications enabled me to deliver successful outcomes for our clients and contribute to their growth and success.I was recruited to spearhead the development of financial solutions that catered to public departments, such as the Inter-American Development Bank and the International Bank for Reconstruction and Development. In addition, I was tasked with creating bespoke solutions for the Ministry of Agrarian Development (MDA), which focused on planning, diagnosis, and loans for small and medium agrarian families. To achieve these objectives, I employed a variety of cutting-edge technologies, including Java, JavaEE, Hibernate, DWR, Struts, JSF, JSP, Servlets, and relational databases such as Oracle, SQLServer, and PostgreSQL. This allowed me to deliver high-quality solutions that were scalable, efficient, and met the exacting requirements of our clients. Overall, my experience in developing financial solutions and custom applications enabled me to deliver successful outcomes for our clients and contribute to their growth and success.
 
   - title: Education # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
-        title: Harvard University
-        caption: 2010 - 2013
-        sub_title: BSc Computer Science
+        title: Universidade do Sul de Santa Catarina
+        caption: 2018 - 2019
+        sub_title: Engineer's degree, Data Science
         quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+          UniSul ranks 1st among private higher education institutions in Santa Catarina, 3rd among all universities in the state, and holds the 4th position in the Southern region of Brazil, according to the Times Higher Education World University 2022 ranking.
         description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+          This degree is to prepare professionals in analysis and preparation of data to apply methodologies and tools in data science. The main focus is to bring value to a analysis and bring insights to the organisation.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: left
+        title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
+        caption: 2014 - 2015
+        sub_title: Master of Business Administration - MBA, Project Management
+        quote: >
+          A global reference in education quality, SENAI/SC trains industry workers through vocational education, specialized consulting, and innovation services aimed at the economic and industrial development and competitiveness of Santa Catarina.
+        description: | # this will include new lines to allow paragraphs
+          This master is for professionals who wants to have the capability and knowledge of wide used methodologies to apply in a organisation. To learn many tools for modern project management, with focus on client requirements to bring value to the stakeholders. The most advanced tools from PMBOK, Scrum and Agile methodologies.
+
+      - layout: left
+        title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
+        caption: 2009 - 2011
+        sub_title: Bachelor of Technology - BTech, Automation Engineer Technology
+        quote: >
+          A global reference in education quality, SENAI/SC trains industry workers through vocational education, specialized consulting, and innovation services aimed at the economic and industrial development and competitiveness of Santa Catarina.
+        description: | # this will include new lines to allow paragraphs
+          Activities and societies: Electronics, Industrial Automation, Project Management, Mathematics, Physics, Computer Engineer, English, AutoCAD
+
+      - layout: left
+        title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
+        caption: 2006 - 2008
+        sub_title: Technician, Computer Software Technology/Technician
+        quote: >
+          A global reference in education quality, SENAI/SC trains industry workers through vocational education, specialized consulting, and innovation services aimed at the economic and industrial development and competitiveness of Santa Catarina.
+        description: | # this will include new lines to allow paragraphs
+          Activities and societies: Programming, English, UML, System analysis, Algorithms
 
   - title: A Little More About Me
     layout: text
     content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
+      Alongside my interests in software engineering some of other hobbies are:
+      - Gym
       - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
-
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+      - Reading
+      - Practicing Karate
+      - Studying new technologies
+      - Work in my Home Lab
 
 # Footer
-footer_show_references: true
+footer_show_references: false
 # references_title: References on request (Override references text)
 
 # Build settings
