@@ -119,7 +119,7 @@ content:
 
       - layout: left
         title: CreativeDrive
-        link: https://creativedrive.com/
+        link: creativedrive.com
         sub_title: Lead Software Engineer
         caption: March 2016 - November 2019
         description: | # this will include new lines to allow paragraphs
@@ -131,7 +131,7 @@ content:
 
       - layout: left
         title: Reticomm
-        link: https://reticomm.com/
+        link: reticomm.com
         sub_title: Chief Technology Officer
         caption: March 2016 - November 2019
         description: | # this will include new lines to allow paragraphs
@@ -145,7 +145,7 @@ content:
 
       - layout: left
         title: Grupo Nexxera
-        link: https://www.nexxera.com/
+        link: www.nexxera.com
         sub_title: Senior Software Engineer
         caption: September 2015 - February 2016
         description: | # this will include new lines to allow paragraphs
@@ -155,7 +155,7 @@ content:
 
       - layout: left
         title: JExperts Tecnologia
-        link: https://www.jexperts.com.br/
+        link: www.jexperts.com.br
         sub_title: Senior Software Engineer
         caption: June 2010 - August 2015
         description: | # this will include new lines to allow paragraphs
@@ -167,7 +167,7 @@ content:
 
       - layout: left
         title: HMW Soluções Tecnológicas LTDA
-        sub_title: Co-Founder and Developer
+        sub_title: Co-Founder and Software Engineer
         caption: March 2010 - May 2010
         description: | # this will include new lines to allow paragraphs
             Worked as a Developer for a software system developed in collaboration with the Education and Culture Department, designed for hospital and process management. As a key member of the team, I was responsible for overseeing the platform's entire lifecycle, from the initial planning phases to its successful execution. I was also accountable for managing demands and delegating tasks to the team, ensuring that each team member was operating at maximum capacity and meeting all project deadlines.
@@ -176,9 +176,9 @@ content:
 
       - layout: left
         title: Softplan Planejamento de Sistemas LTDA
-        link: https://www.softplan.com.br/
-        sub_title: Software Engineer
-        caption: March 2010 - May 2010
+        link: www.softplan.com.br
+        sub_title: Intern Software Engineer
+        caption: March 2009 - March 2010
         description: | # this will include new lines to allow paragraphs
             I was recruited to spearhead the development of financial solutions that catered to public departments, such as the Inter-American Development Bank and the International Bank for Reconstruction and Development. In addition, I was tasked with creating bespoke solutions for the Ministry of Agrarian Development (MDA), which focused on planning, diagnosis, and loans for small and medium agrarian families.
 
