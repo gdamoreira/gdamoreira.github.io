@@ -7,3 +7,8 @@
 #
 layout: default
 ---
+image: 
+  path: images/profile.jpg
+  height: 437
+  width: 531
+  alt: Guilherme D'Amoreira
