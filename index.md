@@ -6,7 +6,7 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: default
-title: Guilherme D'Amoreira - Senior Software Engineer
+title: Guilherme D'Amoreira | Senior Software Engineer
 author:
   name: Guilherme D'Amoreira
 image: 
