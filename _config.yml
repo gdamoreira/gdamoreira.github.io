@@ -14,6 +14,11 @@ website: www.damoreira.com.br
 # SEO 
 author:
   name: Guilherme D'Amoreira
+image: 
+  path: images/profile.jpg
+  height: 437
+  width: 531
+  alt: Guilherme D'Amoreira
 description: | 
   Hi, my name's Guilherme as a software engineer, I have a strong passion for technology, and I strive to ensure that my company's objectives are met by putting in my best efforts. I take pride in delivering high-quality projects on time and meeting the required standards.
 
@@ -22,7 +27,6 @@ description: |
   My academic qualifications include two postgraduate degrees, one in Project Management and another in Engineering in Data Science. I'm particularly interested in using my knowledge in both fields to lead cross-functional teams and maximize everyone's strengths to achieve shared goals.
 
   I strongly believe in the importance of teamwork, and I enjoy working with people from different backgrounds to create something unique and meaningful. I believe that by combining technical skills with good management practices, we can build great things together.
-image: images/profile.jpg
 
 # Dark Mode (true/false/never)
 darkmode: never
