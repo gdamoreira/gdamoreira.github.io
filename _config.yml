@@ -67,24 +67,42 @@ about_content: | # this will include new lines to allow paragraphs
   I strongly believe in the importance of teamwork, and I enjoy working with people from different backgrounds to create something unique and meaningful. I believe that by combining technical skills with good management practices, we can build great things together.
 
 content:
-  # - title: Projects # Title for the section
-  #   layout: list # Type of content section (list/text)
-  #   content:
-  #     - layout: top-middle
-  #       title: Super awesome project
-  #       link: github.com/sproogen
-  #       # link_text: Project Website
-  #       additional_links:
-  #         - title:  sproogen/modern-resume-theme
-  #           icon: fab fa-github
-  #           url: github.com/sproogen/modern-resume-theme
-  #         # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-  #         #   icon: fab fa-github
-  #         #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
-  #       quote: >
-  #         This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
-  #       description: | # this will include new lines to allow paragraphs
-  #         I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Charlie - 3D render farm at CreativeDrive (formerly Decora)
+        link: creativedrive.com
+        # link_text: Project Website
+        # additional_links:
+        #   - title: sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          #   icon: fab fa-github
+          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
+        quote: >
+          I helped transform a small startup into a market leader by architecting a 3D automation platform that scaled from 15 to 150+ people — driving us to become Brazil’s second-largest tech acquisition.
+        description: | # this will include new lines to allow paragraphs
+          Back in March 2016, I joined a small startup in Brazil called Decora. At the time, it was a tight-knit team of about 10 to 15 people. We were primarily a B2C platform — our initial idea was to let customers hire architects online to design their rooms, kitchens, bedrooms, you name it. We acted as intermediaries, matching clients with professionals who’d create personalized interior design projects.
+
+          But as we ran the business, we started noticing an interesting pattern: architects were delivering 3D assets as part of their projects — high-quality renders that looked like real photos. This sparked a realization. After talking to several major retailers, like Walmart and Home Depot, we discovered a huge unmet need. These companies sold products manufactured overseas, often in China, and didn’t have a good way to photograph these products in professional studios. Shipping a sample, staging it, photographing it from every angle — it was costly and slow.
+
+          So we made a bold pivot: we transformed Decora from a B2C interior design service into a B2B platform that produced photorealistic 3D images for major retailers. Essentially, we became a tech-enabled 3D content factory. We built a platform that connected large enterprise clients to a distributed network of 3D artists, similar to how Uber connects drivers and riders. We guaranteed quality by managing all the workflows and checks in-house.
+
+          I was directly responsible for architecting and developing the core of this new platform. On the backend side, we built everything in Java with Spring Boot, following a CQRS and microservices architecture to handle the scale we anticipated. But what I’m particularly proud of is how we engineered the entire 3D production pipeline.
+
+          I developed a desktop application that integrated directly with 3ds Max — using MaxScript, I automated the entire process of positioning assets in scenes, running VRAY renders, validating quality, and exporting to formats like FBX and GLB.
+
+          I built the infrastructure to pipe rendering jobs to our render farm, track them, and automatically pull back results.
+
+          We had automated quality checks on geometry, textures, lighting, and output resolution, to ensure our artists met strict photorealistic standards before delivering assets to clients.
+
+          Later, we also built a real-time scene composer tool — at first using Unreal Engine, later migrating to Unity — which let interior designers or architects drag and drop our validated assets, change materials on the fly, and prepare entire scenes. When they were done, it would seamlessly integrate with our platform and push the scene to our render farm for high-res output.
+
+          All this contributed massively to the company’s growth. We scaled from that initial team of ~15 people to over 150 employees. In fact, Decora became the second-highest-valued startup exit in Brazil at that time. We were acquired by CreativeDrive, a large American photo studio that worked with brands like Nike, who wanted to integrate our cutting-edge 3D capabilities into their business.
+
+          For me personally, this was the most rewarding chapter of my career so far. I got to take ownership of both technical and product challenges end-to-end — from building microservices, to writing MaxScript for automation, to solving infrastructure scaling issues on the render farm. And most importantly, I was part of a team that evolved an idea into a product that transformed how major global retailers market their products online.
 
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
@@ -166,7 +184,7 @@ content:
             To build this system, we used a diverse range of technologies, including Angular, AWS, Bamboo, Git, Java, JavaEE, JUNIT, Maven, PostgreSQL, Redis, Swagger, Tomcat, and Wildfly. As the CTO, I have overseen the development and implementation of this system, ensuring its successful integration with the company's infrastructure and meeting the expectations of both internal stakeholders and external investors.
 
       - layout: left
-        title: CreativeDrive
+        title: CreativeDrive (formerly Decora)
         link: creativedrive.com
         sub_title: Lead Software Engineer
         caption: March 2016 - November 2019
