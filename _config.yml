@@ -90,6 +90,30 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: Phoenix Security
+        link: phoenix.security
+        sub_title: Senior Software Engineer
+        caption: January 2025 - Present
+        quote: >
+          Phoenix Security empowers businesses to effectively analyze and contextualize threats for optimal application security. ACT on risk that matters most to your business, with advanced Application Security Posture Management (ASPM) and streamlined vulnerability management. Meet the expert team behind the scenes making it all happen. ACT now to safeguard your assets.
+        description: | # this will include new lines to allow paragraphs
+            As a Senior Software Engineer, I lead the development and implementation of our Application Security Posture Management (ASPM) platform, a powerful solution designed to empower organizations in managing and prioritizing vulnerabilities across their entire stack—from infrastructure to applications and components. Our platform delivers actionable insights that help businesses address critical security risks and optimize their application security posture.
+
+            As part of a forward-thinking team, I contribute to building a scalable and secure platform that enables businesses to proactively analyze, prioritize, and mitigate threats, in alignment with our vision to safeguard critical assets. Phoenix Security’s mission is to transform vulnerability management into a streamlined, data-driven process that allows organizations to ACT on the risks that matter most to them.
+
+            Key Responsibilities:
+
+            - Lead the design, development, and enhancement of the ASPM platform
+            - Drive end-to-end software development lifecycle, from concept to deployment
+            - Collaborate closely with cross-functional teams to deliver seamless security solutions
+            - Ensure the platform’s scalability, reliability, and performance to meet diverse security needs
+            - Continuously integrate new technologies to optimize the platform’s capabilities
+
+            Our platform is built using a modern tech stack, including Spring Boot for backend services, Kotlin and Java 17 for core development, Angular for frontend components, and PostgreSQL for data management. These technologies enable us to deliver a robust and scalable solution that meets the complex needs of our clients in managing their application security posture.
+
+            At Phoenix Security, we’re committed to empowering businesses to make data-driven security decisions, and I’m proud to be part of a team that’s shaping the future of application security.
+
+      - layout: left
         title: beyonnex.io
         link: beyonnex.io
         sub_title: Senior Software Engineer
