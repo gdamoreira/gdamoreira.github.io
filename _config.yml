@@ -108,10 +108,24 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: left
+        title: beyonnex.io
+        link: beyonnex.io
+        sub_title: Senior Software Engineer
+        caption: August 2025 - Present
+        quote: >
+          We want to make real estate climate-friendly, comfortable and economical: To achieve this we digitise and network buildings on behalf of our customers and develop new, intelligent products.
+        description: | # this will include new lines to allow paragraphs
+            As I return to the company as a Senior Software Engineer, my responsibility is to develop the platform that calculates each user’s costs in real time, fundamentally impacting how the real estate industry operates. The platform provides clients with real-time visualizations of their consumption and associated costs, ensuring transparent billing and enabling timely, cost-efficient adjustments to their environments.
+
+            Our vision involves modernizing the existing systems prevalent in Germany, which rely on cumbersome manual processes and intricate localized systems to calculate heat consumption. By leveraging the capabilities of IoT devices, we are pioneering real-time consumption calculation, empowering users to monitor and manage their heat production and associated costs effectively. This approach not only provides users with immediate insights but also offers estimations and enhances client autonomy.
+
+            In pursuit of our goals, we utilize cutting-edge technologies such as Kotlin, Quarkus, Kafka, Git, Jira, Gradle, and more. By harnessing these tools, we ensure that our platform remains at the forefront of innovation, delivering robust and scalable solutions to meet the evolving needs of our clients and stakeholders.
+
+      - layout: left
         title: Phoenix Security
         link: phoenix.security
         sub_title: Senior Software Engineer
-        caption: January 2025 - Present
+        caption: January 2025 - August 2025
         quote: >
           Phoenix Security empowers businesses to effectively analyze and contextualize threats for optimal application security. ACT on risk that matters most to your business, with advanced Application Security Posture Management (ASPM) and streamlined vulnerability management. Meet the expert team behind the scenes making it all happen. ACT now to safeguard your assets.
         description: | # this will include new lines to allow paragraphs
