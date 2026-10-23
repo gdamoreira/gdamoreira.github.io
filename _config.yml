@@ -7,19 +7,13 @@ version: 2
 
 # Personal info
 name: Guilherme D'Amoreira
-title: Senior Software Engineer
+title: Senior Software Engineer · Kotlin & Java
 email: guilherme@damoreira.com.br
 website: www.damoreira.com.br
 
-# SEO 
-description: | 
-  Hi, my name's Guilherme as a software engineer, I have a strong passion for technology, and I strive to ensure that my company's objectives are met by putting in my best efforts. I take pride in delivering high-quality projects on time and meeting the required standards.
-
-  Throughout my career, I have been fortunate enough to work on diverse technology-based projects, including Project Management, Banking Systems, 3D rendering systems, systems integration, front-end and back-end development, recommendation systems, government loan systems, hospital management systems, among others. I have gained valuable experience in each of these areas, which has helped me become a better software engineer.
-
-  My academic qualifications include two postgraduate degrees, one in Project Management and another in Engineering in Data Science. I'm particularly interested in using my knowledge in both fields to lead cross-functional teams and maximize everyone's strengths to achieve shared goals.
-
-  I strongly believe in the importance of teamwork, and I enjoy working with people from different backgrounds to create something unique and meaningful. I believe that by combining technical skills with good management practices, we can build great things together.
+# SEO
+description: |
+  Senior software engineer in Barcelona, open to remote. Kotlin and Java backends with Spring Boot, Quarkus and Kafka, from startups to Oracle — including a US$100M exit.
 
 # Dark Mode (true/false/never)
 darkmode: never
@@ -57,55 +51,45 @@ google_analytics: "UA-37599227-1"
 # About Section
 # about_title: About Me
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hi, my name's Guilherme as a software engineer, I have a strong passion for technology, and I strive to ensure that my company's objectives are met by putting in my best efforts. I take pride in delivering high-quality projects on time and meeting the required standards.
+about_content: |
+  I'm a senior software engineer based in Barcelona, open to remote work. For the past few years I've been building backend platforms in Kotlin and Java — Spring Boot and Quarkus services, Kafka pipelines, PostgreSQL — for products where the numbers have to be right in real time.
 
-  Throughout my career, I have been fortunate enough to work on diverse technology-based projects, including Project Management, Banking Systems, 3D rendering systems, systems integration, front-end and back-end development, recommendation systems, government loan systems, hospital management systems, among others. I have gained valuable experience in each of these areas, which has helped me become a better software engineer.
+  I started in 2009 and have worked across the stack since: payment platforms, hospital systems, a 3D rendering platform that helped a 15-person company grow to 150 people and sell for US$100 million, and application security at Oracle. That range helps when a problem crosses boundaries, and most of my best work has happened at those seams.
 
-  My academic qualifications include two postgraduate degrees, one in Project Management and another in Engineering in Data Science. I'm particularly interested in using my knowledge in both fields to lead cross-functional teams and maximize everyone's strengths to achieve shared goals.
-
-  I strongly believe in the importance of teamwork, and I enjoy working with people from different backgrounds to create something unique and meaningful. I believe that by combining technical skills with good management practices, we can build great things together.
+  I like small teams, clear architecture, and code someone else can pick up on a Monday. If you're hiring for a Kotlin or Java backend role — or you need someone who can think about security too — email me at [guilherme@damoreira.com.br](mailto:guilherme@damoreira.com.br).
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: What I work with
+    layout: text
+    content: |
+      - **Languages:** Kotlin, Java 17+, Python (automation and tooling), SQL
+      - **Backend:** Spring Boot, Quarkus, Kafka, REST, CQRS, microservices
+      - **Data:** PostgreSQL, MongoDB, Redis
+      - **Cloud and delivery:** AWS, Docker, Kubernetes, Terraform, CI/CD (Jenkins, Bamboo)
+      - **Security:** application security, static analysis, vulnerability management (ASPM)
+      - **Leadership:** architecture, mentoring, technical direction
+
+  - title: Projects
+    layout: list
     content:
       - layout: top-middle
-        title: Charlie - 3D render farm at CreativeDrive (formerly Decora)
+        title: Charlie — the 3D render farm behind Decora's US$100 million exit
         link: creativedrive.com
-        # link_text: Project Website
-        # additional_links:
-        #   - title: sproogen/modern-resume-theme
-        #     icon: fab fa-github
-        #     url: github.com/sproogen/modern-resume-theme
-          # - title:  Github page for project (eg. sproogen/modern-resume-theme)
-          #   icon: fab fa-github
-          #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
         quote: >
-          I helped transform a small startup into a market leader by architecting a 3D automation platform that scaled from 15 to 150+ people — driving us to become Brazil’s second-largest tech acquisition.
-        description: | # this will include new lines to allow paragraphs
-          Back in March 2016, I joined a small startup in Brazil called Decora. At the time, it was a tight-knit team of about 10 to 15 people. We were primarily a B2C platform — our initial idea was to let customers hire architects online to design their rooms, kitchens, bedrooms, you name it. We acted as intermediaries, matching clients with professionals who’d create personalized interior design projects.
+          I helped build the Java and Spring Boot platform that ran Decora's 3D production — work that helped take a 15-person startup to a US$100 million acquisition.
+        description: |
+          In 2016 I joined Decora, then a small team in Florianópolis building an online interior design marketplace. Architects were delivering photorealistic 3D renders alongside their projects, and retailers such as Target, Lowe's and Bed Bath & Beyond had a problem worth solving: they sold products made overseas and had no affordable way to photograph them in context. Decora pivoted from a consumer marketplace into a B2B 3D content platform, and I helped build the engineering behind that pivot.
 
-          But as we ran the business, we started noticing an interesting pattern: architects were delivering 3D assets as part of their projects — high-quality renders that looked like real photos. This sparked a realization. After talking to several major retailers, like Walmart and Home Depot, we discovered a huge unmet need. These companies sold products manufactured overseas, often in China, and didn’t have a good way to photograph these products in professional studios. Shipping a sample, staging it, photographing it from every angle — it was costly and slow.
+          We built the platform in Java and Spring Boot, using CQRS and microservices to keep the workflow and the render jobs independent. The part I'm proudest of is the production pipeline: a desktop application that integrated with 3ds Max through MaxScript, positioning assets, running V-Ray renders, validating geometry, textures, lighting and output resolution, and exporting to FBX and GLB. Behind it, we piped jobs to the render farm, tracked them, and pulled the results back automatically.
 
-          So we made a bold pivot: we transformed Decora from a B2C interior design service into a B2B platform that produced photorealistic 3D images for major retailers. Essentially, we became a tech-enabled 3D content factory. We built a platform that connected large enterprise clients to a distributed network of 3D artists, similar to how Uber connects drivers and riders. We guaranteed quality by managing all the workflows and checks in-house.
+          Later I helped build a real-time scene composer, first in Unreal Engine and then in Unity, which let designers drag validated assets into a scene, change materials, and push the finished scene to the render farm for high-resolution output.
 
-          I was directly responsible for architecting and developing the core of this new platform. On the backend side, we built everything in Java with Spring Boot, following a CQRS and microservices architecture to handle the scale we anticipated. But what I’m particularly proud of is how we engineered the entire 3D production pipeline.
+          Decora grew from about 15 people to over 150, and in March 2018 CreativeDrive acquired it for US$100 million — the second-largest Brazilian tech deal that year. By that point Decora was producing more than 15,000 3D product models and 7,000 scenes a month. CreativeDrive was later acquired by Accenture. I owned technical and product problems end to end, from microservice design to MaxScript and render-farm capacity.
 
-          I developed a desktop application that integrated directly with 3ds Max — using MaxScript, I automated the entire process of positioning assets in scenes, running VRAY renders, validating quality, and exporting to formats like FBX and GLB.
+          **Stack:** Java, Spring Boot, CQRS, Kafka, MaxScript, 3ds Max, V-Ray, Unity, Unreal Engine, MongoDB, Redis, AWS
 
-          I built the infrastructure to pipe rendering jobs to our render farm, track them, and automatically pull back results.
-
-          We had automated quality checks on geometry, textures, lighting, and output resolution, to ensure our artists met strict photorealistic standards before delivering assets to clients.
-
-          Later, we also built a real-time scene composer tool — at first using Unreal Engine, later migrating to Unity — which let interior designers or architects drag and drop our validated assets, change materials on the fly, and prepare entire scenes. When they were done, it would seamlessly integrate with our platform and push the scene to our render farm for high-res output.
-
-          All this contributed massively to the company’s growth. We scaled from that initial team of ~15 people to over 150 employees. In fact, Decora became the second-highest-valued startup exit in Brazil at that time. We were acquired by CreativeDrive, a large American photo studio that worked with brands like Nike, who wanted to integrate our cutting-edge 3D capabilities into their business.
-
-          For me personally, this was the most rewarding chapter of my career so far. I got to take ownership of both technical and product challenges end-to-end — from building microservices, to writing MaxScript for automation, to solving infrastructure scaling issues on the render farm. And most importantly, I was part of a team that evolved an idea into a product that transformed how major global retailers market their products online.
-
-  - title: Experience # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Experience
+    layout: list
     content:
       - layout: left
         title: beyonnex.io
@@ -113,13 +97,13 @@ content:
         sub_title: Senior Software Engineer
         caption: August 2025 - Present
         quote: >
-          We want to make real estate climate-friendly, comfortable and economical: To achieve this we digitise and network buildings on behalf of our customers and develop new, intelligent products.
-        description: | # this will include new lines to allow paragraphs
-            As I return to the company as a Senior Software Engineer, my responsibility is to develop the platform that calculates each user’s costs in real time, fundamentally impacting how the real estate industry operates. The platform provides clients with real-time visualizations of their consumption and associated costs, ensuring transparent billing and enabling timely, cost-efficient adjustments to their environments.
+          Back on the platform that calculates heating costs in real time, now helping it reach more buildings across Germany.
+        description: |
+          After eight months at Phoenix Security, I returned to beyonnex in August 2025 to the same platform I helped build in 2023: a service that turns IoT meter readings into real-time heating costs for buildings in Germany.
 
-            Our vision involves modernizing the existing systems prevalent in Germany, which rely on cumbersome manual processes and intricate localized systems to calculate heat consumption. By leveraging the capabilities of IoT devices, we are pioneering real-time consumption calculation, empowering users to monitor and manage their heat production and associated costs effectively. This approach not only provides users with immediate insights but also offers estimations and enhances client autonomy.
+          The work replaces manual, locally customized billing processes with a system that gives customers a live view of their consumption and cost, and room to adjust before the bill arrives. I work mostly in Kotlin and Quarkus, with Kafka moving meter data through the pipeline.
 
-            In pursuit of our goals, we utilize cutting-edge technologies such as Kotlin, Quarkus, Kafka, Git, Jira, Gradle, and more. By harnessing these tools, we ensure that our platform remains at the forefront of innovation, delivering robust and scalable solutions to meet the evolving needs of our clients and stakeholders.
+          **Stack:** Kotlin, Quarkus, Kafka, Gradle
 
       - layout: left
         title: Phoenix Security
@@ -127,23 +111,13 @@ content:
         sub_title: Senior Software Engineer
         caption: January 2025 - August 2025
         quote: >
-          Phoenix Security empowers businesses to effectively analyze and contextualize threats for optimal application security. ACT on risk that matters most to your business, with advanced Application Security Posture Management (ASPM) and streamlined vulnerability management. Meet the expert team behind the scenes making it all happen. ACT now to safeguard your assets.
-        description: | # this will include new lines to allow paragraphs
-            As a Senior Software Engineer, I lead the development and implementation of our Application Security Posture Management (ASPM) platform, a powerful solution designed to empower organizations in managing and prioritizing vulnerabilities across their entire stack—from infrastructure to applications and components. Our platform delivers actionable insights that help businesses address critical security risks and optimize their application security posture.
+          Led development of an application security platform used to turn scattered findings into a prioritized risk list.
+        description: |
+          Phoenix Security is an ASPM product: it pulls vulnerability data from across a customer's infrastructure, applications and dependencies, then helps their security team decide what to fix first.
 
-            As part of a forward-thinking team, I contribute to building a scalable and secure platform that enables businesses to proactively analyze, prioritize, and mitigate threats, in alignment with our vision to safeguard critical assets. Phoenix Security’s mission is to transform vulnerability management into a streamlined, data-driven process that allows organizations to ACT on the risks that matter most to them.
+          I led development of the platform from design through deployment, working closely with product and security specialists. The stack was Spring Boot, Kotlin and Java 17 on the backend, Angular on the front end, and PostgreSQL for data.
 
-            Key Responsibilities:
-
-            - Lead the design, development, and enhancement of the ASPM platform
-            - Drive end-to-end software development lifecycle, from concept to deployment
-            - Collaborate closely with cross-functional teams to deliver seamless security solutions
-            - Ensure the platform’s scalability, reliability, and performance to meet diverse security needs
-            - Continuously integrate new technologies to optimize the platform’s capabilities
-
-            Our platform is built using a modern tech stack, including Spring Boot for backend services, Kotlin and Java 17 for core development, Angular for frontend components, and PostgreSQL for data management. These technologies enable us to deliver a robust and scalable solution that meets the complex needs of our clients in managing their application security posture.
-
-            At Phoenix Security, we’re committed to empowering businesses to make data-driven security decisions, and I’m proud to be part of a team that’s shaping the future of application security.
+          **Stack:** Kotlin, Java 17, Spring Boot, Angular, PostgreSQL
 
       - layout: left
         title: beyonnex.io
@@ -151,13 +125,13 @@ content:
         sub_title: Senior Software Engineer
         caption: November 2023 - December 2024
         quote: >
-          We want to make real estate climate-friendly, comfortable and economical: To achieve this we digitise and network buildings on behalf of our customers and develop new, intelligent products.
-        description: | # this will include new lines to allow paragraphs
-            As a Software Engineer, my primary responsibility is to lead the development and implementation of a groundbreaking platform aimed at revolutionizing the real estate industry. Our platform aims to empower users by providing them with unprecedented control over their daily heat consumption, ensuring transparency in billing and facilitating cost-efficient adjustments to their environments.
+          Built the first version of a real-time heating-cost platform for the German market.
+        description: |
+          I joined beyonnex to help replace the manual, regionally customized systems that German utilities use to calculate heating costs.
 
-            Our vision involves modernizing the existing systems prevalent in Germany, which rely on cumbersome manual processes and intricate localized systems to calculate heat consumption. By leveraging the capabilities of IoT devices, we are pioneering real-time consumption calculation, empowering users to monitor and manage their heat production and associated costs effectively. This approach not only provides users with immediate insights but also offers estimations and enhances client autonomy.
+          We built it in Kotlin and Quarkus, with Kafka carrying meter data through the pipeline and Gradle for the build. My focus was the backend: the services that calculate cost, handle the data flow, and keep the numbers consistent as volume grew.
 
-            In pursuit of our goals, we utilize cutting-edge technologies such as Kotlin, Quarkus, Kafka, Git, Jira, Gradle, and more. By harnessing these tools, we ensure that our platform remains at the forefront of innovation, delivering robust and scalable solutions to meet the evolving needs of our clients and stakeholders.
+          **Stack:** Kotlin, Quarkus, Kafka, Gradle
 
       - layout: left
         title: Oracle
@@ -165,140 +139,158 @@ content:
         sub_title: Senior Application Security Engineer
         caption: July 2020 - November 2023
         quote: >
-          We want to make NetSuite OneWorld achieve complete global visibility, real-time financial reporting, and accelerated monthly close, transforming our finance team's focus from data manipulation to value addition.
-        description: | # this will include new lines to allow paragraphs
-            As an Application Security Engineer, I am responsible for ensuring that the company's software applications are secure and free from vulnerabilities. This involves performing thorough code reviews and gap analysis, identifying potential security risks, and developing effective strategies to mitigate them. In addition, I work closely with developers to train them in best practices and ensure that they are incorporating security considerations into their code from the outset.
+          Made application security part of the development routine, not a review that happened at the end.
+        description: |
+          At Oracle I worked on application security for NetSuite, reviewing code and architecture for vulnerabilities and helping development teams fix the patterns rather than individual findings.
 
-            To streamline this process, I have developed a range of internal tools that automate code analysis and static analysis, enabling me to identify potential vulnerabilities more quickly and efficiently. These tools have proven invaluable in improving the overall security of Oracle's software applications and reducing the risk of breaches and other security incidents. Overall, my work as a Security Engineer is crucial in ensuring that Oracle's software is secure and resilient in the face of evolving security threats.
+          I built internal tooling that automated code and static analysis, so reviewers could spend their time on judgment instead of triage. I also ran training sessions with developers on secure coding practice — the goal was fewer findings in the next release, not more reports.
+
+          **Stack:** Java, static analysis (SAST), secure SDLC
 
       - layout: left
         title: FREE NOW (formerly mytaxi)
         link: free-now.com
         sub_title: Senior Software Engineer
         caption: December 2019 - May 2020
-        description: | # this will include new lines to allow paragraphs
-            As a Software Engineer, my primary responsibility is to ensure seamless operation of the driver management system. The application we have been developing is designed to manage the complete driver profile, ranging from private information of drivers, cars, and associated companies, to the registration, validation, and ongoing management of this information.
+        quote: >
+          Worked on the driver management system that keeps FREE NOW's driver, vehicle and company records accurate.
+        description: |
+          I worked on the driver management system at FREE NOW (formerly mytaxi): driver, vehicle and company profiles, plus registration, validation and the ongoing changes that keep those records accurate.
 
-            In the development process, we have adopted the Agile Scrum methodology to manage demands, prioritize tasks, and allocate resources. Our technology stack includes Java, Kotlin, RabbitMQ, AWS, Bamboo, Docker, Git, Maven, IntelliJ, JIRA, JUNIT, Kubernetes, PostgreSQL, Spring Boot, Spring Cloud, and Swagger.
+          The stack was Java, Kotlin, Spring Boot and Spring Cloud on AWS, with RabbitMQ, PostgreSQL, Docker and Kubernetes, delivered through Bamboo. I split my time between feature work, production issues and keeping the service stable.
 
-            My role in this project involves overseeing the development and maintenance of this complex system, ensuring that it is running efficiently and delivering the desired results. I work closely with my team to resolve technical issues, monitor the performance of the system, and make necessary improvements to ensure the smooth functioning of the driver management system.
+          **Stack:** Java, Kotlin, Spring Boot, Spring Cloud, RabbitMQ, AWS, Kubernetes, PostgreSQL
 
       - layout: left
         title: Reticomm
-        link: reticomm.com
         sub_title: Chief Technology Officer
         caption: October 2016 - October 2018
-        description: | # this will include new lines to allow paragraphs
-            As the CTO of the company, I am responsible for organizing the technical aspects of the organization, developing the system, and managing expectations with investors, in addition to managing the entire infrastructure.
+        quote: >
+          Ran engineering and infrastructure for a corporate communication platform, concurrently with my lead role at Decora — both full-time roles.
+        description: |
+          Reticomm built a corporate communication platform: customers planned campaigns in images, text and video, scheduled delivery, and measured how their audience responded. As CTO I owned the technical direction, the system design and the infrastructure, and I managed the relationship with investors.
 
-            Our team has developed a cutting-edge corporate communication system that enables customers to plan and manage their internal communication through the creation of digital content in the form of images, text, and videos. The system ensures that the communication is delivered to the target audience on the planned date and time, with metrics provided to the manager to measure the effectiveness of the communication.
+          The team built it in Java and JavaEE on WildFly and Tomcat, with Angular on the front end, PostgreSQL and Redis for data, and AWS for hosting. I stayed hands-on — the role was as much architecture and delivery as management.
 
-            Our clients have reported improved scheduling, better audience scaling, and a more effective approach to communication with their target audience.
-
-            To build this system, we used a diverse range of technologies, including Angular, AWS, Bamboo, Git, Java, JavaEE, JUNIT, Maven, PostgreSQL, Redis, Swagger, Tomcat, and Wildfly. As the CTO, I have overseen the development and implementation of this system, ensuring its successful integration with the company's infrastructure and meeting the expectations of both internal stakeholders and external investors.
+          **Stack:** Java, JavaEE, Angular, PostgreSQL, Redis, AWS, WildFly
 
       - layout: left
         title: CreativeDrive (formerly Decora)
         link: creativedrive.com
         sub_title: Lead Software Engineer
         caption: March 2016 - November 2019
-        description: | # this will include new lines to allow paragraphs
-            As a Technical Leader, my primary responsibility is to oversee the organization of tasks and demands, as well as the development of company systems. Our team has developed an application that streamlines the entire 3D rendering workflow, from managing demands to distributing them across our rendering systems and managing the assets generated by the processes.
+        quote: >
+          Led the team that automated 3D production, cutting delivery time and making output consistent as volume grew.
+        description: |
+          I joined Decora as a technical lead and stayed through the pivot from consumer interior design to B2B 3D content, and through the acquisition by CreativeDrive.
 
-            The automation of the rendering process has significantly reduced the delivery time of 3D models, ensured standardization in delivery, and increased the flow of 3D rendered models. In the development process, we have adopted the Agile Scrum methodology to manage demands, prioritize tasks, and allocate resources.
+          My team built the workflow that managed demand, distributed render jobs across the farm, and tracked the assets produced. Automating it cut delivery time, made output consistent, and let the company take on far more work without adding people proportionally.
 
-            Our technology stack includes a broad range of technologies, such as 3dsmax, Android Studio, Angular, Apache Kafka, AWS, Axon Framework, Bamboo, Circle-ci, Docker, Git, Gradle, IntelliJ, Java, Jenkins-ci, JIRA, JUNIT, Kubernetes, Maven, Maxscript, MongoDB, Python, Qt, Redis, Robot Framework, Spring Boot, and Swagger. As the technical leader, I work closely with the team to ensure efficient system development, resolve technical issues, and monitor the performance of the 3D rendering workflow system.As a technical leader, my primary responsibility is to oversee the organization of tasks and demands, as well as the development of company systems. Our team has developed an application that streamlines the entire 3D rendering workflow, from managing demands to distributing them across our rendering systems and managing the assets generated by the processes. The automation of the rendering process has significantly reduced the delivery time of 3D models, ensured standardization in delivery, and increased the flow of 3D rendered models. In the development process, we have adopted the Agile Scrum methodology to manage demands, prioritize tasks, and allocate resources. Our technology stack includes a broad range of technologies, such as 3dsmax, Android Studio, Angular, Apache Kafka, AWS, Axon Framework, Bamboo, Circle-ci, Docker, Git, Gradle, IntelliJ, Java, Jenkins-ci, JIRA, JUNIT, Kubernetes, Maven, Maxscript, MongoDB, Python, Qt, Redis, Robot Framework, Spring Boot, and Swagger. As the technical leader, I work closely with the team to ensure efficient system development, resolve technical issues, and monitor the performance of the 3D rendering workflow system.
+          I split my time between architecture, code review, and keeping a growing system reliable. The stack was Java and Spring Boot with Kafka and Axon, Angular, MongoDB and Redis, running on AWS and Kubernetes.
+
+          **Stack:** Java, Spring Boot, Kafka, Axon, Angular, MongoDB, Redis, Python, AWS, Kubernetes
 
       - layout: left
         title: Grupo Nexxera
         link: www.nexxera.com
         sub_title: Senior Software Engineer
         caption: September 2015 - February 2016
-        description: | # this will include new lines to allow paragraphs
-            As a Software Engineer I was brought in to develop an integrated enterprise solution that would centralize all internal applications into one platform. Our main goal was to create the Hive Platform, a unified solution that would combine all payment applications, including credit card solutions and other modules, in one place. This would help our customers by providing better solutions that would increase the efficiency of the company's operations.
+        quote: >
+          Helped design a single platform to consolidate a payments company's internal applications.
+        description: |
+          Nexxera brought me in to help build the Hive Platform, a single home for its payment products — card processing and the modules around it — instead of a set of disconnected internal systems.
 
-            We utilized cutting-edge technologies such as AngularJS, Cucumber, Hibernate, Java, JavaEE, JUNIT, MongoDB, OpenStack, Oracle, Python, RabbitMQ, Redis, Spring Boot, and Wildfly to develop the Hive Platform. Our team worked tirelessly to create a scalable and robust platform that would meet the needs of the company and its stakeholders. Although the product wasn't completed during my time at the company, I was confident that the solution would significantly impact the company's internal processes, and provide a better experience for our customers.
+          We built it with Java and Spring Boot, AngularJS on the front end, and a mix of Oracle, MongoDB and Redis for data, with RabbitMQ for messaging. The product was still in progress when I left, but the architecture and the core services were in place.
+
+          **Stack:** Java, Spring Boot, AngularJS, RabbitMQ, MongoDB, Redis, Oracle
 
       - layout: left
         title: JExperts Tecnologia
         link: www.jexperts.com.br
         sub_title: Senior Software Engineer
         caption: June 2010 - August 2015
-        description: | # this will include new lines to allow paragraphs
-            As a technical leader with expertise in project management, I am accountable for overseeing the entire lifecycle of the platform, from its inception to its completion. My role involves managing the demands of the project and delegating tasks to my team, ensuring that the project is delivered on time and within budget.
+        quote: >
+          Led the Channel platform from first commit to a product used for portfolio and strategy management.
+        description: |
+          At JExperts I led development of Channel, a platform for project, program and portfolio management built around PMBOK and Agile practice, with Balanced Scorecard, KPIs and risk management.
 
-            I led the development of the Channel platform, which is designed to facilitate project management, program and portfolio management, and strategic planning, utilizing both PMBOK and Agile methodologies. Additionally, the platform utilizes Balanced Scorecard techniques, including Key Performance Indicators (KPIs) and risk management strategies, making it a valuable tool for our clients.
+          I ran the delivery side as well as the code: planning, estimating, delegating and keeping the scope honest. Channel was built in Java and JavaEE on WildFly, with AngularJS, Oracle, PostgreSQL and SQL Server.
 
-            The Channel platform streamlines project planning and execution, generating significant value for our clients by reducing costs and improving predictability. The platform is built using a variety of cutting-edge technologies, including AngularJS, Cloud, Cucumber, Hibernate, Java, JavaEE, JUNIT, Oracle, PostgreSQL, Redis, SOAP, SQLServer, and Wildfly.
+          **Stack:** Java, JavaEE, AngularJS, Oracle, PostgreSQL, SQL Server, WildFly
 
       - layout: left
         title: HMW Soluções Tecnológicas LTDA
         sub_title: Co-Founder and Software Engineer
         caption: March 2010 - May 2010
-        description: | # this will include new lines to allow paragraphs
-            Worked as a Developer for a software system developed in collaboration with the Education and Culture Department, designed for hospital and process management. As a key member of the team, I was responsible for overseeing the platform's entire lifecycle, from the initial planning phases to its successful execution. I was also accountable for managing demands and delegating tasks to the team, ensuring that each team member was operating at maximum capacity and meeting all project deadlines.
+        quote: >
+          Co-founded a small company building hospital and process-management software with a public education and culture department.
+        description: |
+          We built a system for hospital and process management in partnership with the Education and Culture Department. As co-founder I worked across the whole lifecycle — planning, development, and coordinating the small team.
 
-            Throughout the development process, we utilized cutting-edge technologies such as JBoss Seam, Hibernate, Java, JavaEE, JUNIT, Oracle, SOAP, and JBoss AS. Our team's collective expertise and attention to detail ensured that the platform was optimized for efficiency and effectiveness. Ultimately, this software solution facilitated the management of hospital processes and greatly enhanced operational efficiency for our clients in the healthcare industry.
+          The stack was Java and JavaEE with JBoss Seam and Hibernate, on Oracle, with SOAP services.
+
+          **Stack:** Java, JavaEE, JBoss Seam, Hibernate, Oracle, SOAP
 
       - layout: left
         title: Softplan Planejamento de Sistemas LTDA
         link: www.softplan.com.br
         sub_title: Intern Software Engineer
         caption: March 2009 - March 2010
-        description: | # this will include new lines to allow paragraphs
-            I was recruited to spearhead the development of financial solutions that catered to public departments, such as the Inter-American Development Bank and the International Bank for Reconstruction and Development. In addition, I was tasked with creating bespoke solutions for the Ministry of Agrarian Development (MDA), which focused on planning, diagnosis, and loans for small and medium agrarian families.
+        quote: >
+          Built financial and planning tools for public-sector institutions at the start of my career.
+        description: |
+          My first role: financial solutions for public-sector and multilateral clients such as the Inter-American Development Bank and the International Bank for Reconstruction and Development, plus planning and loan tools for the Ministry of Agrarian Development.
 
-            To achieve these objectives, I employed a variety of cutting-edge technologies, including Java, JavaEE, Hibernate, DWR, Struts, JSF, JSP, Servlets, and relational databases such as Oracle, SQLServer, and PostgreSQL. This allowed me to deliver high-quality solutions that were scalable, efficient, and met the exacting requirements of our clients. Overall, my experience in developing financial solutions and custom applications enabled me to deliver successful outcomes for our clients and contribute to their growth and success.I was recruited to spearhead the development of financial solutions that catered to public departments, such as the Inter-American Development Bank and the International Bank for Reconstruction and Development. In addition, I was tasked with creating bespoke solutions for the Ministry of Agrarian Development (MDA), which focused on planning, diagnosis, and loans for small and medium agrarian families. To achieve these objectives, I employed a variety of cutting-edge technologies, including Java, JavaEE, Hibernate, DWR, Struts, JSF, JSP, Servlets, and relational databases such as Oracle, SQLServer, and PostgreSQL. This allowed me to deliver high-quality solutions that were scalable, efficient, and met the exacting requirements of our clients. Overall, my experience in developing financial solutions and custom applications enabled me to deliver successful outcomes for our clients and contribute to their growth and success.
+          I worked in Java and JavaEE with JSF, JSP, Struts and Hibernate, against Oracle, SQL Server and PostgreSQL. It taught me early that government software has to be correct, auditable, and usable by people who didn't choose it.
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
+          **Stack:** Java, JavaEE, JSF, JSP, Struts, Hibernate, Oracle, SQL Server, PostgreSQL
+
+  - title: Education
+    layout: list
     content:
       - layout: left
         title: Universidade do Sul de Santa Catarina
         caption: 2018 - 2019
-        sub_title: Engineer's degree, Data Science
-        quote: >
-          UniSul ranks 1st among private higher education institutions in Santa Catarina, 3rd among all universities in the state, and holds the 4th position in the Southern region of Brazil, according to the Times Higher Education World University 2022 ranking.
-        description: | # this will include new lines to allow paragraphs
-          This degree is to prepare professionals in analysis and preparation of data to apply methodologies and tools in data science. The main focus is to bring value to a analysis and bring insights to the organisation.
+        sub_title: Postgraduate degree, Engineering in Data Science
+        description: |
+          Coursework in statistics, data preparation and modeling. It gave me the vocabulary to work with data teams without pretending to be one.
 
       - layout: left
         title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
         caption: 2014 - 2015
         sub_title: Master of Business Administration - MBA, Project Management
-        quote: >
-          A global reference in education quality, SENAI/SC trains industry workers through vocational education, specialized consulting, and innovation services aimed at the economic and industrial development and competitiveness of Santa Catarina.
-        description: | # this will include new lines to allow paragraphs
-          This master is for professionals who wants to have the capability and knowledge of wide used methodologies to apply in a organisation. To learn many tools for modern project management, with focus on client requirements to bring value to the stakeholders. The most advanced tools from PMBOK, Scrum and Agile methodologies.
+        description: |
+          PMBOK, Scrum and Agile practice, with the emphasis on delivering for stakeholders rather than producing documents. Useful every time a project needed a plan that survived contact with reality.
 
       - layout: left
         title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
         caption: 2009 - 2011
-        sub_title: Bachelor of Technology - BTech, Automation Engineer Technology
-        quote: >
-          A global reference in education quality, SENAI/SC trains industry workers through vocational education, specialized consulting, and innovation services aimed at the economic and industrial development and competitiveness of Santa Catarina.
-        description: | # this will include new lines to allow paragraphs
-          Activities and societies: Electronics, Industrial Automation, Project Management, Mathematics, Physics, Computer Engineer, English, AutoCAD
+        sub_title: Bachelor of Technology - BTech, Automation Engineering
+        description: |
+          Electronics, industrial automation, physics and mathematics — the hardware background that made the 3D and render-farm work feel familiar.
 
       - layout: left
         title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
         caption: 2006 - 2008
-        sub_title: Technician, Computer Software Technology/Technician
-        quote: >
-          A global reference in education quality, SENAI/SC trains industry workers through vocational education, specialized consulting, and innovation services aimed at the economic and industrial development and competitiveness of Santa Catarina.
-        description: | # this will include new lines to allow paragraphs
-          Activities and societies: Programming, English, UML, System analysis, Algorithms
+        sub_title: Technician, Computer Software Technology
+        description: |
+          Programming, systems analysis, UML and algorithms. Where I first learned to write software.
 
   - title: A Little More About Me
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in software engineering some of other hobbies are:
+    content: |
+      Outside work I keep a home lab: two Proxmox hosts running Kubernetes, Kafka, PostgreSQL, GitLab, Harbor and Nexus, all provisioned with Terraform and Ansible. It's where I try things before I recommend them at work.
+
       - Gym
       - Gaming
       - Reading
       - Practicing Karate
       - Studying new technologies
-      - Work in my Home Lab
+
+  - title: Get in touch
+    layout: text
+    content: |
+      I'm open to remote senior backend roles, especially on teams working in Kotlin or Java. If that's you, email me at [guilherme@damoreira.com.br](mailto:guilherme@damoreira.com.br) — I'm happy to talk.
 
 # Footer
 footer_show_references: false
