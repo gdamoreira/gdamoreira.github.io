@@ -76,17 +76,17 @@ content:
         title: Charlie — the 3D render farm behind Decora's US$100 million exit
         link: creativedrive.com
         quote: >
-          I helped build the Java and Spring Boot platform that ran Decora's 3D production — work that helped take a 15-person startup to a US$100 million acquisition.
+          I helped build the Java, Spring Boot and Python platform that ran Decora's 3D production — work that helped take a 15-person startup to a US$100 million acquisition.
         description: |
           In 2016 I joined Decora, then a small team in Florianópolis building an online interior design marketplace. Architects were delivering photorealistic 3D renders alongside their projects, and retailers such as Target, Lowe's and Bed Bath & Beyond had a problem worth solving: they sold products made overseas and had no affordable way to photograph them in context. Decora pivoted from a consumer marketplace into a B2B 3D content platform, and I helped build the engineering behind that pivot.
 
-          We built the platform in Java and Spring Boot, using CQRS and microservices to keep the workflow and the render jobs independent. The part I'm proudest of is the production pipeline: a desktop application that integrated with 3ds Max through MaxScript, positioning assets, running V-Ray renders, validating geometry, textures, lighting and output resolution, and exporting to FBX and GLB. Behind it, we piped jobs to the render farm, tracked them, and pulled the results back automatically.
+          We built the platform in Java and Spring Boot, using CQRS and microservices to keep the workflow and the render jobs independent. The part I'm proudest of is the production pipeline: a desktop application that integrated with 3ds Max through MaxScript, positioning assets, running V-Ray renders, validating geometry, textures, lighting and output resolution, and exporting to FBX and GLB. Behind it, Python services piped jobs to the render farm, tracked them, and pulled the results back automatically.
 
           Later I helped build a real-time scene composer, first in Unreal Engine and then in Unity, which let designers drag validated assets into a scene, change materials, and push the finished scene to the render farm for high-resolution output.
 
           Decora grew from about 15 people to over 150, and in March 2018 CreativeDrive acquired it for US$100 million — the second-largest Brazilian tech deal that year. By that point Decora was producing more than 15,000 3D product models and 7,000 scenes a month. CreativeDrive was later acquired by Accenture. I owned technical and product problems end to end, from microservice design to MaxScript and render-farm capacity.
 
-          **Stack:** Java, Spring Boot, CQRS, Kafka, MaxScript, 3ds Max, V-Ray, Unity, Unreal Engine, MongoDB, Redis, AWS
+          **Stack:** Python, Java, Spring Boot, CQRS, Kafka, MaxScript, 3ds Max, V-Ray, Unity, Unreal Engine, MongoDB, Redis, AWS
 
   - title: Experience
     layout: list
