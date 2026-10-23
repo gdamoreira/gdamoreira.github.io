@@ -52,7 +52,7 @@ google_analytics: "UA-37599227-1"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: |
-  I'm a senior software engineer based in Barcelona, open to remote work. For the past few years I've been building backend platforms in Kotlin and Java — Spring Boot and Quarkus services, Kafka pipelines, PostgreSQL — for products where the numbers have to be right in real time.
+  I'm a senior software engineer based in Barcelona, open to remote work. For the past few years I've been building backend platforms in Kotlin and Java — Spring Boot and Quarkus services, Kafka pipelines, PostgreSQL — for products where the numbers have to be right in real time. I work in Python alongside them.
 
   I started in 2009 and have worked across the stack since: payment platforms, hospital systems, a 3D rendering platform that helped a 15-person company grow to 150 people and sell for US$100 million, and application security at Oracle. That range helps when a problem crosses boundaries, and most of my best work has happened at those seams.
 
@@ -62,10 +62,10 @@ content:
   - title: What I work with
     layout: text
     content: |
-      - **Languages:** Kotlin, Java 17+, Python (automation and tooling), SQL
+      - **Languages:** Kotlin, Java 17+, Python, SQL
       - **Backend:** Spring Boot, Quarkus, Kafka, REST, CQRS, microservices
       - **Data:** PostgreSQL, MongoDB, Redis
-      - **Cloud and delivery:** AWS, Docker, Kubernetes, Terraform, CI/CD (Jenkins, Bamboo)
+      - **Cloud and delivery:** AWS, Docker, Kubernetes, Terraform, CI/CD (GitHub Actions, GitLab CI, Jenkins, Bamboo)
       - **Security:** application security, static analysis, vulnerability management (ASPM)
       - **Leadership:** architecture, mentoring, technical direction
 
@@ -202,7 +202,7 @@ content:
 
           We built it with Java and Spring Boot, AngularJS on the front end, and a mix of Oracle, MongoDB and Redis for data, with RabbitMQ for messaging. The product was still in progress when I left, but the architecture and the core services were in place.
 
-          **Stack:** Java, Spring Boot, AngularJS, RabbitMQ, MongoDB, Redis, Oracle
+          **Stack:** Java, Spring Boot, AngularJS, RabbitMQ, MongoDB, Redis, Oracle, Python
 
       - layout: left
         title: JExperts Tecnologia

@@ -50,7 +50,7 @@ Keep the theme's existing section order. Insert one new section and change the s
 
 ### 3.2 About (target: 3 paragraphs, 120–160 words)
 1. What he is and has been doing for the last few years: senior backend engineer, Kotlin/Java, Spring Boot and Quarkus, event-driven systems on Kafka, real-time cost and consumption platforms.
-2. Range and proof in one sentence: startups through Oracle, the 3D platform that scaled 15 → 150 and was acquired, application security depth, Python when the problem calls for it.
+2. Range and proof in one sentence: startups through Oracle, the 3D platform that scaled 15 → 150 and was acquired, application security depth, Python as a core language.
 3. How he works, where he is, and what he wants next: based in Barcelona, open to remote. Close with a direct, human invitation and the email as a link.
 
 Cut: the four-paragraph life story, the generic teamwork paragraph, the degree summary (Education covers it).
@@ -59,10 +59,10 @@ Note: `description` (SEO) must be rewritten separately — 2–3 sentences, keyw
 ### 3.3 New section — "What I work with" (target: 5 lines)
 Inserted directly after About. `layout: text`, one bolded line per area, no prose:
 
-- **Languages:** Kotlin, Java (17+), Python (automation and tooling)
+- **Languages:** Kotlin, Java (17+), Python, SQL
 - **Backend:** Spring Boot, Quarkus, Kafka, REST, CQRS, microservices
 - **Data:** PostgreSQL, MongoDB, Redis
-- **Cloud & delivery:** AWS, Docker, Kubernetes, CI/CD (Jenkins, Bamboo, GitHub Actions)
+- **Cloud & delivery:** AWS, Docker, Kubernetes, Terraform, CI/CD (GitHub Actions, GitLab CI, Jenkins, Bamboo)
 - **Security:** application security, static analysis, vulnerability management (ASPM)
 - **Leadership:** technical leadership, architecture, mentoring, cross-functional delivery
 
@@ -112,7 +112,7 @@ One short section or footer line: "If you're building something in Kotlin or Jav
 - Home lab: two Proxmox hosts (Dell R820 and Intel NUC), Terraform + Ansible, running Kubernetes, Kafka, PostgreSQL, GitLab, Harbor, Nexus, Redis and friends.
 - Education: postgraduation in Engineering in Data Science.
 - Decora: sold to CreativeDrive in March 2018 for US$100M, the second-largest Brazilian tech deal of 2018; no outside investment; CreativeDrive later acquired by Accenture. Sources: Exame (15 Mar 2018) and NeoFeed (21 Aug 2025).
-- Toptal badge and "Top 3%" stay; page stays in English; `Senior` titles from the entry headers; Python framed as automation/tooling; TypeScript out.
+- Toptal badge and "Top 3%" stay; page stays in English; `Senior` titles from the entry headers; Python is a core language, not tooling-only; TypeScript out.
 
 **Optional numbers.** These would make specific lines stronger, but the plan works without them — I write the qualitative version and never invent:
 1. **Oracle:** how many teams/applications did you cover, and did the static-analysis tooling cut review time or findings?
