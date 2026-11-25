@@ -7,13 +7,13 @@ version: 2
 
 # Personal info
 name: Guilherme D'Amoreira
-title: Senior Software Engineer · Kotlin & Java
-email: guilherme@damoreira.com.br
-website: www.damoreira.com
+title: Staff / Senior Software Engineer · Distributed Systems Architecture & Application Security
+email: guilherme@damoreira.com
+website: damoreira.com
 
 # SEO
 description: |
-  Senior software engineer in Barcelona, open to remote. Kotlin and Java backends with Spring Boot, Quarkus and Kafka, from startups to Oracle — including a US$100M exit.
+  Staff-level software engineer and technical leader in Barcelona, open to remote. 15+ years designing, scaling and securing distributed backend platforms in Kotlin, Java, Quarkus, Spring Boot and Kafka — from a US$100M startup exit to application security at Oracle.
 
 # Dark Mode (true/false/never)
 darkmode: never
@@ -35,9 +35,9 @@ linkedin_username: gdamoreira
 
 # Additional icon links
 additional_links:
-- title: damoreira.com.br
-  icon: fas fa-globe
-  url: https://www.damoreira.com.br
+- title: Snodra — open-source messaging stack
+  icon: fas fa-project-diagram
+  url: https://snodra.damoreira.com
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)
@@ -52,31 +52,63 @@ google_analytics: "UA-37599227-1"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: |
-  I'm a senior software engineer based in Barcelona, open to remote work. For the past few years I've been building backend platforms in Kotlin and Java — Spring Boot and Quarkus services, Kafka pipelines, PostgreSQL — for products where the numbers have to be right in real time. I work in Python alongside them.
+  I'm a staff-level software engineer and technical leader based in Barcelona, open to remote work. For 15+ years I've designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS — owning the architecture end to end, not just the tickets.
 
-  I started in 2009 and have worked across the stack since: payment platforms, hospital systems, a 3D rendering platform that helped a 15-person company grow to 150 people and sell for US$100 million, and application security at Oracle. That range helps when a problem crosses boundaries, and most of my best work has happened at those seams.
+  My home ground is event-driven systems on the JVM: Kotlin and Java, Quarkus and Spring Boot, Apache Kafka, PostgreSQL, running on AWS and Kubernetes. What sets me apart is the security side. I spent more than three years as an application security engineer at Oracle, so threat modeling, static analysis and a secure SDLC are part of how I design systems rather than a review at the end.
 
-  I like small teams, clear architecture, and code someone else can pick up on a Monday. If you're hiring for a Kotlin or Java backend role — or you need someone who can think about security too — email me at [guilherme@damoreira.com.br](mailto:guilherme@damoreira.com.br).
+  I've led at every scale: tech lead of the platform behind a US$100 million exit, CTO of a B2B startup, and today the engineer who sets architecture and engineering standards across backend services. I also design and maintain [Snodra](https://snodra.damoreira.com), an open-source messaging stack for services that speak events and gRPC.
+
+  If you're hiring for a Staff Engineer, Tech Lead or Software Architect role, email me at [guilherme@damoreira.com](mailto:guilherme@damoreira.com).
 
 content:
-  - title: What I work with
+  - title: Career highlights
     layout: text
     content: |
-      - **Languages:** Kotlin, Java 17+, Python, SQL
-      - **Backend:** Spring Boot, Quarkus, Kafka, REST, CQRS, microservices
-      - **Data:** PostgreSQL, MongoDB, Redis
-      - **Cloud and delivery:** AWS, Docker, Kubernetes, Terraform, CI/CD (GitHub Actions, GitLab CI, Jenkins, Bamboo)
-      - **Security:** application security, static analysis, vulnerability management (ASPM)
-      - **Leadership:** architecture, mentoring, technical direction
+      - **A US$100 million exit.** Tech lead on the 3D production platform that took Decora from about 15 people to over 150 and to its acquisition by CreativeDrive — the second-largest Brazilian tech deal of 2018.
+      - **Real-time platform architecture.** Architected and led the IoT ingestion and calculation pipelines at Beyonnex that turn continuous meter telemetry into heating consumption and billing for German real estate portfolios, replacing manual batch processes.
+      - **Security built into engineering.** At Oracle (NetSuite), architected the internal static analysis and code-auditing tools that sped up vulnerability detection across large enterprise codebases, and mentored engineering teams on secure design.
+      - **Platform ownership in cybersecurity.** Led end-to-end architecture and delivery of Phoenix Security's enterprise ASPM platform, which correlates vulnerabilities across cloud, containers and code.
+      - **Executive experience.** CTO of Reticomm for two years: engineering strategy, cloud infrastructure and product delivery, with technical roadmaps aligned to investor and business goals.
+      - **Open-source author.** Creator of [Snodra](https://snodra.damoreira.com): a Rust router, client libraries in Kotlin, Rust and Go, and a protocol conformance suite, all Apache-2.0.
+      - **Vetted and trained.** Member of the Toptal network since 2021, with three Black Hat certifications in API security, security automation and malware analysis.
+
+  - title: Core competencies
+    layout: text
+    content: |
+      - **Architecture & engineering:** distributed systems, microservices, event-driven architecture (CQRS), system design, Domain-Driven Design, REST/gRPC APIs, TDD/BDD, high availability
+      - **Languages & frameworks:** Java (8–21), Kotlin, Spring Boot, Quarkus, Rust, Python, JavaScript/TypeScript (Angular, React, Vue)
+      - **Cloud, data & DevOps:** AWS (EC2, S3, RDS, IAM, CloudWatch), Docker, Kubernetes, Terraform, Apache Kafka, RabbitMQ, PostgreSQL, MySQL, Oracle, MongoDB, Redis, CI/CD (GitHub Actions, Jenkins, Bamboo)
+      - **Application security:** ASPM, SAST/DAST automation, static code analysis tooling, threat modeling, API security, vulnerability remediation, secure SDLC
+      - **Leadership & delivery:** technical strategy, cross-team architecture alignment, engineering mentorship, Agile/Scrum, PMBOK, ITIL
 
   - title: Projects
     layout: list
     content:
       - layout: top-middle
+        title: Snodra — open-source messaging for services that speak events and gRPC
+        link: snodra.damoreira.com
+        quote: >
+          I design and maintain Snodra: commands, queries, events and sagas over the gRPC and Kafka a team already runs — with no broker in the request path, no proprietary event store and no per-node licence.
+        description: |
+          Snodra is a CQRS-style messaging stack for service fleets. Services send commands and queries, and a stateless router forwards each one to a live handler of the right type, enforcing deadlines, retries, priority and streaming at the router. Events never pass through it: they are written through a transactional outbox, in the same database transaction as the state they describe, and relayed to idempotent processors. Sagas coordinate long-running processes with associations and deadlines.
+
+          I own the whole design, from the wire protocol to the documentation:
+
+          - **Snodra Server** — a stateless gRPC router and control plane written in Rust. It stores nothing and queues nothing, so every instance is independent and scaling out needs no server-to-server traffic. The dashboard and service topology are served from the same binary.
+          - **Client libraries in several languages** — Kotlin with a Spring Boot starter (published to Maven Central), Rust (crates.io) and Go, with Python in progress.
+          - **A conformance suite** — every client is checked against a real server, so the protocol, not any single implementation, is the stable contract.
+          - **Pluggable stores** — Kafka or RabbitMQ Streams for events; PostgreSQL, MySQL or MongoDB for messages.
+          - **Security and operations built in** — static token, OAuth2/OIDC JWT or mTLS with per-service ACLs, OpenTelemetry metrics and health probes.
+
+          The project is pre-1.0 and released under Apache-2.0. Source: [github.com/snodra](https://github.com/snodra).
+
+          **Stack:** Rust, tonic, gRPC, Kotlin, Spring Boot, Go, Apache Kafka, RabbitMQ Streams, PostgreSQL, MySQL, MongoDB, OpenTelemetry, Docker
+
+      - layout: top-middle
         title: Charlie — the 3D render farm behind Decora's US$100 million exit
         link: creativedrive.com
         quote: >
-          I helped build the Java, Spring Boot and Python platform that ran Decora's 3D production — work that helped take a 15-person startup to a US$100 million acquisition.
+          I led the team behind the Java, Spring Boot and Python platform that ran Decora's 3D production — work that helped take a 15-person startup to a US$100 million acquisition.
         description: |
           In 2016 I joined Decora, then a small team in Florianópolis building an online interior design marketplace. Architects were delivering photorealistic 3D renders alongside their projects, and retailers such as Target, Lowe's and Bed Bath & Beyond had a problem worth solving: they sold products made overseas and had no affordable way to photograph them in context. Decora pivoted from a consumer marketplace into a B2B 3D content platform, and I helped build the engineering behind that pivot.
 
@@ -92,189 +124,201 @@ content:
     layout: list
     content:
       - layout: left
-        title: beyonnex.io
+        title: Beyonnex.io
         link: beyonnex.io
-        sub_title: Senior Software Engineer
+        sub_title: Senior Software Engineer · Backend Architecture
         caption: August 2025 - Present
         quote: >
-          Back on the platform that calculates heating costs in real time, now helping it reach more buildings across Germany.
+          Architecting the real-time IoT pipelines that turn meter telemetry into heating consumption and transparent billing across German real estate portfolios.
         description: |
-          After eight months at Phoenix Security, I returned to beyonnex in August 2025 to the same platform I helped build in 2023: a service that turns IoT meter readings into real-time heating costs for buildings in Germany.
+          I returned to Beyonnex in August 2025 to the platform I helped build from its first version in 2023, now with ownership of its backend architecture.
 
-          The work replaces manual, locally customized billing processes with a system that gives customers a live view of their consumption and cost, and room to adjust before the bill arrives. I work mostly in Kotlin and Quarkus, with Kafka moving meter data through the pipeline.
+          - **Architectural ownership:** architected and led the development of real-time IoT data ingestion and calculation pipelines that process continuous telemetry to compute residential heating consumption and billing.
+          - **Event-driven scalability:** designed resilient, low-latency microservices in Kotlin, Quarkus and Apache Kafka, replacing legacy manual batch processes with automated real-time cost estimates and customer analytics.
+          - **Engineering standards:** established clean architectural patterns, automated testing practices and CI/CD workflows across backend services, improving deployment reliability and observability.
 
-          **Stack:** Kotlin, Quarkus, Kafka, Gradle
+          **Stack:** Kotlin, Quarkus, Apache Kafka, PostgreSQL, Docker, Gradle
 
       - layout: left
         title: Phoenix Security
         link: phoenix.security
-        sub_title: Senior Software Engineer
+        sub_title: Senior Software Engineer · AppSec Platform
         caption: January 2025 - August 2025
         quote: >
-          Led development of an application security platform used to turn scattered findings into a prioritized risk list.
+          Led the architecture and delivery of an enterprise ASPM platform that turns scattered findings into a prioritized risk list.
         description: |
-          Phoenix Security is an ASPM product: it pulls vulnerability data from across a customer's infrastructure, applications and dependencies, then helps their security team decide what to fix first.
+          Phoenix Security is an Application Security Posture Management (ASPM) product: it correlates vulnerabilities across a customer's cloud infrastructure, containers and application code, then helps their security team decide what to fix first.
 
-          I led development of the platform from design through deployment, working closely with product and security specialists. The stack was Spring Boot, Kotlin and Java 17 on the backend, Angular on the front end, and PostgreSQL for data.
+          - **Platform architecture & delivery:** led end-to-end architectural design and feature delivery for the platform, from design through deployment.
+          - **Security & risk prioritization:** engineered the backend aggregation and risk-scoring engines in Java 17, Kotlin and Spring Boot that let enterprise security teams prioritize and remediate critical exposure paths.
+          - **Cross-functional alignment:** partnered with product, security research and frontend teams on PostgreSQL query performance, API contracts and platform reliability.
 
-          **Stack:** Kotlin, Java 17, Spring Boot, Angular, PostgreSQL
+          **Stack:** Java 17, Kotlin, Spring Boot, PostgreSQL, Angular, Docker, AWS, CI/CD
 
       - layout: left
-        title: beyonnex.io
+        title: Beyonnex.io
         link: beyonnex.io
         sub_title: Senior Software Engineer
         caption: November 2023 - December 2024
         quote: >
-          Built the first version of a real-time heating-cost platform for the German market.
+          Built the foundation of a real-time heating-cost platform for the German market.
         description: |
-          I joined beyonnex to help replace the manual, regionally customized systems that German utilities use to calculate heating costs.
+          I joined Beyonnex to help replace the manual, regionally customized systems used to calculate heating costs in Germany.
 
-          We built it in Kotlin and Quarkus, with Kafka carrying meter data through the pipeline and Gradle for the build. My focus was the backend: the services that calculate cost, handle the data flow, and keep the numbers consistent as volume grew.
+          - **Core platform foundation:** designed and implemented the foundational backend services and event-streaming pipelines for real-time IoT energy consumption tracking and tenant billing transparency.
+          - **System modernization:** integrated heterogeneous IoT device protocols into a unified Quarkus and Kafka microservices ecosystem, keeping the data accurate and the system fault tolerant as volume grew.
 
-          **Stack:** Kotlin, Quarkus, Kafka, Gradle
+          **Stack:** Kotlin, Quarkus, Apache Kafka, PostgreSQL, Gradle
 
       - layout: left
-        title: Oracle
+        title: Oracle (NetSuite)
         link: oracle.com
         sub_title: Senior Application Security Engineer
         caption: July 2020 - November 2023
         quote: >
           Made application security part of the development routine, not a review that happened at the end.
         description: |
-          At Oracle I worked on application security for NetSuite, reviewing code and architecture for vulnerabilities and helping development teams fix the patterns rather than individual findings.
+          At Oracle I worked on application security for NetSuite, reviewing code and architecture and helping engineering teams fix the patterns rather than individual findings.
 
-          I built internal tooling that automated code and static analysis, so reviewers could spend their time on judgment instead of triage. I also ran training sessions with developers on secure coding practice — the goal was fewer findings in the next release, not more reports.
+          - **Automated security tooling:** architected and built internal static analysis (SAST) and automated code-auditing tools that accelerated vulnerability detection across large-scale enterprise codebases.
+          - **Secure SDLC & enablement:** ran deep-dive architectural security reviews, threat modeling and gap analyses, working directly with engineering teams to remediate flaws and embed security-by-design practices.
+          - **Developer mentorship:** trained and mentored software engineers on secure coding standards, API hardening and vulnerability mitigation, reducing recurring security defects.
 
-          **Stack:** Java, static analysis (SAST), secure SDLC
+          **Stack:** Java, static analysis tooling, SAST, API security, threat modeling, CI/CD
 
       - layout: left
-        title: FREE NOW (formerly mytaxi)
+        title: Toptal
+        link: toptal.com
+        sub_title: Senior Software Engineer · Part-Time Consultant
+        caption: September 2021 - Present
+        quote: >
+          Part-time consulting through the Toptal network, architecting and delivering backend systems for client companies.
+        description: |
+          - **Bloom Tree Partners, LLC:** architected and implemented an enterprise operational monitoring and analytics platform that captures system events and KPIs to support executive decision-making.
+          - **Mumo Systems:** engineered core backend features for Abacus, a commercial Jira application that lets non-technical administrators build automated mathematical field formulas without custom scripting.
+
+          **Stack:** Java, Kotlin, Spring Boot, REST APIs, Atlassian SDK, SQL
+
+      - layout: left
+        title: FREENOW (formerly mytaxi)
         link: free-now.com
-        sub_title: Senior Software Engineer
+        sub_title: Software Engineer
         caption: December 2019 - May 2020
         quote: >
-          Worked on the driver management system that keeps FREE NOW's driver, vehicle and company records accurate.
+          Built and operated the high-availability services that manage driver onboarding and fleet profiles across European markets.
         description: |
-          I worked on the driver management system at FREE NOW (formerly mytaxi): driver, vehicle and company profiles, plus registration, validation and the ongoing changes that keep those records accurate.
+          - **Distributed mobility services:** developed and maintained high-availability microservices managing end-to-end driver onboarding, regulatory validation and fleet profile lifecycles across European markets.
+          - **Cloud-native operations:** operated production JVM services on AWS and Kubernetes with RabbitMQ event messaging, driving performance tuning and incident resolution.
 
-          The stack was Java, Kotlin, Spring Boot and Spring Cloud on AWS, with RabbitMQ, PostgreSQL, Docker and Kubernetes, delivered through Bamboo. I split my time between feature work, production issues and keeping the service stable.
-
-          **Stack:** Java, Kotlin, Spring Boot, Spring Cloud, RabbitMQ, AWS, Kubernetes, PostgreSQL
+          **Stack:** Java, Kotlin, Spring Boot, Spring Cloud, Kubernetes, AWS, RabbitMQ, PostgreSQL, Docker
 
       - layout: left
-        title: Reticomm
-        sub_title: Chief Technology Officer
-        caption: October 2016 - October 2018
-        quote: >
-          Ran engineering and infrastructure for a corporate communication platform, concurrently with my lead role at Decora — both full-time roles.
-        description: |
-          Reticomm built a corporate communication platform: customers planned campaigns in images, text and video, scheduled delivery, and measured how their audience responded. As CTO I owned the technical direction, the system design and the infrastructure, and I managed the relationship with investors.
-
-          The team built it in Java and JavaEE on WildFly and Tomcat, with Angular on the front end, PostgreSQL and Redis for data, and AWS for hosting. I stayed hands-on — the role was as much architecture and delivery as management.
-
-          **Stack:** Java, JavaEE, Angular, PostgreSQL, Redis, AWS, WildFly
-
-      - layout: left
-        title: CreativeDrive (formerly Decora)
+        title: Decora / CreativeDrive
         link: creativedrive.com
-        sub_title: Lead Software Engineer
+        sub_title: Tech Leader & Software Engineer
         caption: March 2016 - November 2019
         quote: >
-          Led the team that automated 3D production, cutting delivery time and making output consistent as volume grew.
+          Led the engineering squads that automated 3D production, through the pivot, the scale-up and a US$100 million acquisition.
         description: |
           I joined Decora as a technical lead and stayed through the pivot from consumer interior design to B2B 3D content, and through the acquisition by CreativeDrive.
 
-          My team built the workflow that managed demand, distributed render jobs across the farm, and tracked the assets produced. Automating it cut delivery time, made output consistent, and let the company take on far more work without adding people proportionally.
+          - **Technical leadership:** led cross-functional engineering squads building a distributed 3D rendering workflow automation platform, significantly reducing model turnaround times and standardizing asset delivery.
+          - **Event-driven & cloud architecture:** designed scalable task distribution pipelines using Java, Spring Boot, Axon Framework (CQRS), Apache Kafka and Kubernetes on AWS.
+          - **Scale:** the platform let the company grow from about 15 people to over 150 and take on far more work without adding people proportionally.
 
-          I split my time between architecture, code review, and keeping a growing system reliable. The stack was Java and Spring Boot with Kafka and Axon, Angular, MongoDB and Redis, running on AWS and Kubernetes.
+          **Stack:** Java, Spring Boot, Apache Kafka, Axon Framework, AWS, Kubernetes, Docker, Python, MongoDB, Redis
 
-          **Stack:** Java, Spring Boot, Kafka, Axon, Angular, MongoDB, Redis, Python, AWS, Kubernetes
+      - layout: left
+        title: Reticomm
+        sub_title: Chief Technology Officer (CTO)
+        caption: October 2016 - October 2018
+        quote: >
+          Directed engineering strategy, infrastructure and delivery for a B2B corporate communications platform, concurrently with my lead role at Decora.
+        description: |
+          - **Executive & technical strategy:** directed engineering strategy, cloud infrastructure and product delivery for a B2B corporate communications platform, aligning technical roadmaps with investor and business goals.
+          - **Full-stack delivery:** led the engineering team building multi-channel content scheduling, audience segmentation and engagement analytics systems on AWS, staying hands-on in architecture and delivery.
+
+          **Stack:** Java, JavaEE, Angular, AWS, PostgreSQL, Redis, WildFly
 
       - layout: left
         title: Grupo Nexxera
         link: www.nexxera.com
-        sub_title: Senior Software Engineer
+        sub_title: Software Engineer
         caption: September 2015 - February 2016
         quote: >
-          Helped design a single platform to consolidate a payments company's internal applications.
+          Engineered core modules of a unified enterprise payments platform.
         description: |
-          Nexxera brought me in to help build the Hive Platform, a single home for its payment products — card processing and the modules around it — instead of a set of disconnected internal systems.
+          Engineered core modules for Hive, Nexxera's unified enterprise payments platform, consolidating credit card and financial integrations that had lived in disconnected internal systems.
 
-          We built it with Java and Spring Boot, AngularJS on the front end, and a mix of Oracle, MongoDB and Redis for data, with RabbitMQ for messaging. The product was still in progress when I left, but the architecture and the core services were in place.
-
-          **Stack:** Java, Spring Boot, AngularJS, RabbitMQ, MongoDB, Redis, Oracle, Python
+          **Stack:** Java, Spring Boot, RabbitMQ, Oracle, MongoDB, Redis
 
       - layout: left
         title: JExperts Tecnologia
         link: www.jexperts.com.br
-        sub_title: Senior Software Engineer
+        sub_title: Tech Leader & Java Engineer
         caption: June 2010 - August 2015
         quote: >
-          Led the Channel platform from first commit to a product used for portfolio and strategy management.
+          Led full-lifecycle delivery of Channel, an enterprise PPM and Balanced Scorecard platform.
         description: |
-          At JExperts I led development of Channel, a platform for project, program and portfolio management built around PMBOK and Agile practice, with Balanced Scorecard, KPIs and risk management.
-
-          I ran the delivery side as well as the code: planning, estimating, delegating and keeping the scope honest. Channel was built in Java and JavaEE on WildFly, with AngularJS, Oracle, PostgreSQL and SQL Server.
+          Led development of Channel, an enterprise platform for project, program and portfolio management with Balanced Scorecard, KPIs and risk management. I ran the delivery side as well as the code — planning, estimating and delegating — applying PMBOK and Agile practices.
 
           **Stack:** Java, JavaEE, AngularJS, Oracle, PostgreSQL, SQL Server, WildFly
 
       - layout: left
-        title: HMW Soluções Tecnológicas LTDA
-        sub_title: Co-Founder and Software Engineer
-        caption: March 2010 - May 2010
-        quote: >
-          Co-founded a small company building hospital and process-management software with a public education and culture department.
+        title: Earlier roles
+        sub_title: HMW Soluções Tecnológicas · Softplan
+        caption: March 2009 - May 2010
         description: |
-          We built a system for hospital and process management in partnership with the Education and Culture Department. As co-founder I worked across the whole lifecycle — planning, development, and coordinating the small team.
+          - **HMW Soluções Tecnológicas — Co-Founder & Software Engineer (2010):** co-founded a small company building hospital and process-management software in partnership with a public education and culture department.
+          - **Softplan — Software Engineering Intern (2009 – 2010):** built financial and planning tools for public-sector and multilateral clients, including the Inter-American Development Bank and the International Bank for Reconstruction and Development.
 
-          The stack was Java and JavaEE with JBoss Seam and Hibernate, on Oracle, with SOAP services.
-
-          **Stack:** Java, JavaEE, JBoss Seam, Hibernate, Oracle, SOAP
-
-      - layout: left
-        title: Softplan Planejamento de Sistemas LTDA
-        link: www.softplan.com.br
-        sub_title: Intern Software Engineer
-        caption: March 2009 - March 2010
-        quote: >
-          Built financial and planning tools for public-sector institutions at the start of my career.
-        description: |
-          My first role: financial solutions for public-sector and multilateral clients such as the Inter-American Development Bank and the International Bank for Reconstruction and Development, plus planning and loan tools for the Ministry of Agrarian Development.
-
-          I worked in Java and JavaEE with JSF, JSP, Struts and Hibernate, against Oracle, SQL Server and PostgreSQL. It taught me early that government software has to be correct, auditable, and usable by people who didn't choose it.
-
-          **Stack:** Java, JavaEE, JSF, JSP, Struts, Hibernate, Oracle, SQL Server, PostgreSQL
+          **Stack:** Java, JavaEE, JBoss Seam, JSF, Hibernate, Oracle, PostgreSQL
 
   - title: Education
     layout: list
     content:
       - layout: left
-        title: Universidade do Sul de Santa Catarina
+        title: Universidade do Sul de Santa Catarina (UNISUL)
         caption: 2018 - 2019
-        sub_title: Postgraduate degree, Engineering in Data Science
+        sub_title: Postgraduate Degree in Data Science Engineering
         description: |
-          Coursework in statistics, data preparation and modeling. It gave me the vocabulary to work with data teams without pretending to be one.
+          Statistics, data preparation and modeling — the grounding I use when a platform's value depends on its data being right.
 
       - layout: left
         title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
         caption: 2014 - 2015
-        sub_title: Master of Business Administration - MBA, Project Management
+        sub_title: MBA in Project Management
         description: |
-          PMBOK, Scrum and Agile practice, with the emphasis on delivering for stakeholders rather than producing documents. Useful every time a project needed a plan that survived contact with reality.
+          PMBOK, Scrum and Agile practice, with the emphasis on delivering for stakeholders. It underpins how I plan roadmaps and align teams.
 
       - layout: left
         title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
         caption: 2009 - 2011
-        sub_title: Bachelor of Technology - BTech, Automation Engineering
+        sub_title: BTech in Automation Engineering Technology
         description: |
-          Electronics, industrial automation, physics and mathematics — the hardware background that made the 3D and render-farm work feel familiar.
+          Electronics, industrial automation, physics and mathematics — the hardware background behind my IoT and render-farm work.
 
       - layout: left
         title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
         caption: 2006 - 2008
-        sub_title: Technician, Computer Software Technology
+        sub_title: Technician in Computer Software Technology
         description: |
           Programming, systems analysis, UML and algorithms. Where I first learned to write software.
+
+  - title: Certifications & languages
+    layout: text
+    content: |
+      **Cybersecurity certifications (Black Hat)**
+
+      - A Complete Practical Approach to Malware Analysis and Memory Forensics — Black Hat, December 2022 (ID 63789321)
+      - Automating Security with Open Source — Black Hat, August 2022 (ID 56106531)
+      - Attacking and Securing APIs — Black Hat, August 2021 (ID 36101770)
+
+      **Languages**
+
+      - English — fluent, professional
+      - Spanish — fluent, professional
+      - Portuguese — native
 
   - title: A Little More About Me
     layout: text
@@ -290,7 +334,7 @@ content:
   - title: Get in touch
     layout: text
     content: |
-      I'm open to remote senior backend roles, especially on teams working in Kotlin or Java. If that's you, email me at [guilherme@damoreira.com.br](mailto:guilherme@damoreira.com.br) — I'm happy to talk.
+      I'm open to Staff Engineer, Tech Lead and Software Architect roles, remote or in Barcelona — especially where distributed systems and security meet. Email me at [guilherme@damoreira.com](mailto:guilherme@damoreira.com) or find me on [LinkedIn](https://linkedin.com/in/gdamoreira). I'm happy to talk.
 
 # Footer
 footer_show_references: false
