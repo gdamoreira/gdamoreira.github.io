@@ -276,35 +276,30 @@ content:
           **Stack:** Java, JavaEE, JBoss Seam, JSF, Hibernate, Oracle, PostgreSQL
 
   - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: Universidade do Sul de Santa Catarina (UNISUL)
-        caption: 2018 - 2019
-        sub_title: Postgraduate Degree in Data Science Engineering
-        description: |
-          Statistics, data preparation and modeling — the grounding I use when a platform's value depends on its data being right.
-
-      - layout: left
-        title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
-        caption: 2014 - 2015
-        sub_title: MBA in Project Management
-        description: |
-          PMBOK, Scrum and Agile practice, with the emphasis on delivering for stakeholders. It underpins how I plan roadmaps and align teams.
-
-      - layout: left
-        title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
-        caption: 2009 - 2011
-        sub_title: BTech in Automation Engineering Technology
-        description: |
-          Electronics, industrial automation, physics and mathematics — the hardware background behind my IoT and render-farm work.
-
-      - layout: left
-        title: SENAI/SC - Serviço Nacional de Aprendizagem Industrial
-        caption: 2006 - 2008
-        sub_title: Technician in Computer Software Technology
-        description: |
-          Programming, systems analysis, UML and algorithms. Where I first learned to write software.
+    layout: text
+    content: |
+      <div class="edu-list">
+      <div class="edu-item">
+      <div class="edu-head"><span class="edu-degree">Postgraduate Degree in Data Science Engineering</span><span class="edu-years">2018 – 2019</span></div>
+      <div class="edu-school">Universidade do Sul de Santa Catarina (UNISUL)</div>
+      <div class="edu-note">Statistics, data preparation and modeling — the grounding I use when a platform's value depends on its data being right.</div>
+      </div>
+      <div class="edu-item">
+      <div class="edu-head"><span class="edu-degree">MBA in Project Management</span><span class="edu-years">2014 – 2015</span></div>
+      <div class="edu-school">SENAI/SC</div>
+      <div class="edu-note">PMBOK, Scrum and Agile practice, with the emphasis on delivering for stakeholders. It underpins how I plan roadmaps and align teams.</div>
+      </div>
+      <div class="edu-item">
+      <div class="edu-head"><span class="edu-degree">BTech in Automation Engineering Technology</span><span class="edu-years">2009 – 2011</span></div>
+      <div class="edu-school">SENAI/SC</div>
+      <div class="edu-note">Electronics, industrial automation, physics and mathematics — the hardware background behind my IoT and render-farm work.</div>
+      </div>
+      <div class="edu-item">
+      <div class="edu-head"><span class="edu-degree">Technician in Computer Software Technology</span><span class="edu-years">2006 – 2008</span></div>
+      <div class="edu-school">SENAI/SC</div>
+      <div class="edu-note">Programming, systems analysis, UML and algorithms. Where I first learned to write software.</div>
+      </div>
+      </div>
 
   - title: Certifications & languages
     layout: text
