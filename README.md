@@ -25,7 +25,7 @@
 
 ## About me
 
-I'm a staff-level software engineer and technical leader based in Barcelona, open to remote work. For 15+ years I've designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS.
+I'm a senior software engineer and technical leader based in Barcelona, open to remote work. For 15+ years I've designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS.
 
 - **Home ground:** event-driven systems on the JVM with Kotlin, Java, Quarkus, Spring Boot, Apache Kafka and PostgreSQL, on AWS and Kubernetes.
 - **Security background:** more than three years as an application security engineer at Oracle (NetSuite), building static analysis tooling and running threat modeling and secure design reviews.

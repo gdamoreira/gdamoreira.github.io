@@ -14,7 +14,7 @@ url: https://damoreira.com
 
 # SEO
 description: |
-  Staff-level software engineer and technical leader in Barcelona, open to remote. 15+ years designing, scaling and securing distributed backend platforms in Kotlin, Java, Quarkus, Spring Boot and Kafka — from a US$100M startup exit to application security at Oracle.
+  Senior software engineer and technical leader in Barcelona, open to remote. 15+ years designing, scaling and securing distributed backend platforms in Kotlin, Java, Quarkus, Spring Boot and Kafka — from a US$100M startup exit to application security at Oracle.
 
 # Dark Mode (true/false/never)
 darkmode: never
@@ -53,7 +53,7 @@ google_analytics: "UA-37599227-1"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: |
-  I'm a staff-level software engineer and technical leader based in Barcelona, open to remote work. For 15+ years I've designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS — owning the architecture end to end, not just the tickets.
+  I'm a senior software engineer and technical leader based in Barcelona, open to remote work. For 15+ years I've designed, scaled and secured distributed backend platforms across PropTech, cybersecurity, FinTech and enterprise SaaS — owning the architecture end to end, not just the tickets. That is the scope I'm ready to take on as a Staff Engineer.
 
   My home ground is event-driven systems on the JVM: Kotlin and Java, Quarkus and Spring Boot, Apache Kafka, PostgreSQL, running on AWS and Kubernetes. What sets me apart is the security side. I spent more than three years as an application security engineer at Oracle, so threat modeling, static analysis and a secure SDLC are part of how I design systems rather than a review at the end.
 
