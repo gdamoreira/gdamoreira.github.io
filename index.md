@@ -11,7 +11,7 @@ author:
   name: Guilherme D'Amoreira
 image: 
   path: images/profile.jpg
-  height: 437
-  width: 531
+  height: 460
+  width: 460
   alt: Guilherme D'Amoreira
 ---
