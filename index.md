@@ -10,8 +10,8 @@ title: Guilherme D'Amoreira \| Staff / Senior Software Engineer
 author:
   name: Guilherme D'Amoreira
 image: 
-  path: images/profile.jpg
-  height: 460
-  width: 460
-  alt: Guilherme D'Amoreira
+  path: images/og-image.png
+  height: 630
+  width: 1200
+  alt: "Guilherme D'Amoreira — Staff / Senior Software Engineer, Distributed Systems Architecture & Application Security"
 ---
