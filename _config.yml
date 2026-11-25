@@ -347,3 +347,13 @@ sass:
 
 plugins:
  - jekyll-seo-tag
+
+# Files that are part of the repository but not of the site
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - node_modules
+  - vendor
