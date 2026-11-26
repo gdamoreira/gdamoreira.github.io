@@ -27,12 +27,14 @@
   </div>
 {%- endif -%}
 
-<div class="highlights-footer">
-  <span class="highlights-footer-text">{{ c.footer.text | default: "See the full timeline, endorsements, and shared connections." }}</span>
-  {%- if site.linkedin_username -%}
-    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="highlights-footer-link">
-      <i class="fab fa-linkedin" aria-hidden="true"></i>
-      <span>{{ c.footer.link_text | default: "View full profile on LinkedIn" }}</span>
-    </a>
-  {%- endif -%}
-</div>
+{%- if c.footer -%}
+  <div class="highlights-footer">
+    <span class="highlights-footer-text">{{ c.footer.text | default: "See the full timeline, endorsements, and shared connections." }}</span>
+    {%- if site.linkedin_username -%}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="highlights-footer-link">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        <span>{{ c.footer.link_text | default: "View full profile on LinkedIn" }}</span>
+      </a>
+    {%- endif -%}
+  </div>
+{%- endif -%}
