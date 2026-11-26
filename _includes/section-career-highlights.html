@@ -1,0 +1,38 @@
+{%- assign c = include.content -%}
+{%- if c.subtitle -%}
+  <p class="highlights-subtitle">{{ c.subtitle | escape }}</p>
+{%- endif -%}
+
+{%- if c.lead_card -%}
+  <div class="highlight-lead-card">
+    {%- if c.lead_card.tag -%}
+      <span class="highlight-tag">{{ c.lead_card.tag | escape }}</span>
+    {%- endif -%}
+    <h4 class="highlight-lead-title">{{ c.lead_card.title | escape }}</h4>
+    <p class="highlight-lead-text">{{ c.lead_card.description }}</p>
+  </div>
+{%- endif -%}
+
+{%- if c.cards -%}
+  <div class="highlights-grid">
+    {%- for card in c.cards -%}
+      <div class="highlight-grid-card">
+        {%- if card.tag -%}
+          <span class="highlight-tag">{{ card.tag | escape }}</span>
+        {%- endif -%}
+        <h4 class="highlight-grid-title">{{ card.title | escape }}</h4>
+        <p class="highlight-grid-text">{{ card.description }}</p>
+      </div>
+    {%- endfor -%}
+  </div>
+{%- endif -%}
+
+<div class="highlights-footer">
+  <span class="highlights-footer-text">{{ c.footer.text | default: "See the full timeline, endorsements, and shared connections." }}</span>
+  {%- if site.linkedin_username -%}
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="highlights-footer-link">
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
+      <span>{{ c.footer.link_text | default: "View full profile on LinkedIn" }}</span>
+    </a>
+  {%- endif -%}
+</div>

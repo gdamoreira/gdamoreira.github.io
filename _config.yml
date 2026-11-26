@@ -59,19 +59,37 @@ about_content: |
 
   I've led at every scale: tech lead of the platform behind a US$100 million exit, CTO of a B2B startup, and today the engineer who sets architecture and engineering standards across backend services. I also design and maintain [Snodra](https://snodra.damoreira.com), an open-source messaging stack for services that speak events and gRPC.
 
-  If you're hiring for a Staff Engineer, Tech Lead or Software Architect role, email me at [guilherme@damoreira.com](mailto:guilherme@damoreira.com).
-
 content:
   - title: Career highlights
-    layout: text
-    content: |
-      - **A US$100 million exit.** Tech lead on the 3D production platform that took Decora from about 15 people to over 150 and to its acquisition by CreativeDrive — the second-largest Brazilian tech deal of 2018.
-      - **Real-time platform architecture.** Architected and led the IoT ingestion and calculation pipelines at Beyonnex that turn continuous meter telemetry into heating consumption and billing for German real estate portfolios, replacing manual batch processes.
-      - **Security built into engineering.** At Oracle (NetSuite), architected the internal static analysis and code-auditing tools that sped up vulnerability detection across large enterprise codebases, and mentored engineering teams on secure design.
-      - **Platform ownership in cybersecurity.** Led end-to-end architecture and delivery of Phoenix Security's enterprise ASPM platform, which correlates vulnerabilities across cloud, containers and code.
-      - **Executive experience.** CTO of Reticomm for two years: engineering strategy, cloud infrastructure and product delivery, with technical roadmaps aligned to investor and business goals.
-      - **Open-source author.** Creator of [Snodra](https://snodra.damoreira.com): a Rust router, client libraries in Kotlin, Rust and Go, and a protocol conformance suite, all Apache-2.0.
-      - **Vetted and trained.** Member of the Toptal network since 2021, with three Black Hat certifications in API security, security automation and malware analysis.
+    layout: career-highlights
+    content:
+      subtitle: "Seven proof points across distributed systems, application security, and engineering leadership — delivered at enterprise scale."
+      lead_card:
+        tag: "SCALE & IMPACT"
+        title: "A US$100 million exit"
+        description: "Tech lead on the 3D production platform that took Decora from about 15 people to over 150 and to its acquisition by CreativeDrive — the second-largest Brazilian tech deal of 2018."
+      cards:
+        - tag: "DISTRIBUTED SYSTEMS"
+          title: "Real-time platform architecture"
+          description: "Architected and led the IoT ingestion and calculation pipelines at Beyonnex that turn continuous meter telemetry into heating consumption and billing for German real estate portfolios, replacing manual batch processes."
+        - tag: "APPLICATION SECURITY"
+          title: "Security built into engineering"
+          description: "At Oracle (NetSuite), architected the internal static analysis and code-auditing tools that sped up vulnerability detection across large enterprise codebases, and mentored engineering teams on secure design."
+        - tag: "PLATFORM OWNERSHIP"
+          title: "Enterprise ASPM delivery"
+          description: "Led end-to-end architecture and delivery of Phoenix Security's enterprise ASPM platform, which correlates vulnerabilities across cloud, containers and code."
+        - tag: "LEADERSHIP"
+          title: "Executive experience"
+          description: "CTO of Reticomm for two years: engineering strategy, cloud infrastructure and product delivery, with technical roadmaps aligned to investor and business goals."
+        - tag: "OPEN SOURCE"
+          title: "Author of Snodra"
+          description: 'Creator of <a href="https://snodra.damoreira.com" target="_blank" rel="noopener noreferrer">Snodra</a>: a Rust router, client libraries in Kotlin, Rust and Go, and a protocol conformance suite, all Apache-2.0.'
+        - tag: "VETTING"
+          title: "Vetted and trained"
+          description: "Member of the Toptal network since 2021, with three Black Hat certifications in API security, security automation and malware analysis."
+      footer:
+        text: "See the full timeline, endorsements, and shared connections."
+        link_text: "View full profile on LinkedIn"
 
   - title: Core competencies
     layout: text
@@ -330,9 +348,11 @@ content:
       **Away from the keyboard.** Karate and the gym keep me honest: both reward showing up consistently more than talent, which is also how I think good engineering teams work. The rest of the time goes to reading and to whatever technology I have decided to understand next.
 
   - title: Get in touch
-    layout: text
-    content: |
-      I'm open to Staff Engineer, Tech Lead and Software Architect roles, remote or in Barcelona — especially where distributed systems and security meet. Email me at [guilherme@damoreira.com](mailto:guilherme@damoreira.com) or find me on [LinkedIn](https://linkedin.com/in/gdamoreira). I'm happy to talk.
+    layout: get-in-touch
+    content:
+      pitch: "Open to **Staff Engineer, Tech Lead and Software Architect** roles — remote or Barcelona, ideally where distributed systems and security meet. Happy to talk."
+      linkedin_text: "Connect on LinkedIn"
+      button_text: "Email Guilherme"
 
 # Footer
 footer_show_references: false
@@ -357,3 +377,4 @@ exclude:
   - docker-compose.yml
   - node_modules
   - vendor
+  - docs

@@ -1,19 +1,64 @@
 <div class="container intro-container">
-  <h3 id="{{ site.about_title | slugify | default: 'about-me' }}">{{ site.about_title | default:
-  "About Me" }}</h3>
+  <h3 id="{{ site.about_title | slugify | default: 'about-me' }}">{{ site.about_title | default: "About Me" }}</h3>
   <div class="row clearfix">
     {%- if site.about_profile_image -%}
-      <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+      <div class="col-xs-12 col-sm-4 col-md-3 no-print about-left-col">
         <span class="profile-img" style="background-image: url({{ site.about_profile_image | relative_url }})"></span>
+        <div class="about-profile-links">
+          {%- if site.linkedin_username -%}
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="about-profile-link">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span>View LinkedIn Profile</span>
+            </a>
+          {%- endif -%}
+          {%- if site.email -%}
+            <a href="mailto:{{ site.email }}" class="about-profile-link">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+              <span>Email me</span>
+            </a>
+          {%- endif -%}
+        </div>
         {%- include toptal-badge.html -%}
       </div>
     {%- else -%}
-      <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+      <div class="col-xs-12 col-sm-4 col-md-3 no-print about-left-col">
+        <div class="about-profile-links">
+          {%- if site.linkedin_username -%}
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="about-profile-link">
+              <i class="fab fa-linkedin" aria-hidden="true"></i>
+              <span>View LinkedIn Profile</span>
+            </a>
+          {%- endif -%}
+          {%- if site.email -%}
+            <a href="mailto:{{ site.email }}" class="about-profile-link">
+              <i class="far fa-envelope" aria-hidden="true"></i>
+              <span>Email me</span>
+            </a>
+          {%- endif -%}
+        </div>
         {%- include toptal-badge.html -%}
       </div>
     {%- endif -%}
-    <div class="{{ 'col-xs-12 ' }}{%- if site.about_profile_image -%}col-sm-8 col-md-9 col-print-12{%- endif -%}">
-      {{ site.about_content | strip | markdownify }}
+    <div class="{{ 'col-xs-12 ' }}{%- if site.about_profile_image -%}col-sm-8 col-md-9 col-print-12{%- endif -%} about-right-col">
+      <div class="about-hero-callout">
+        <div class="hero-callout-eyebrow">GUILHERME D'AMOREIRA &middot; SENIOR SOFTWARE ENGINEER</div>
+        <div class="hero-callout-headline">Open for Staff Engineer, Tech Lead &amp; Software Architect roles</div>
+        <div class="hero-callout-pills">
+          <span class="hero-pill"><span class="pill-dot"></span>Barcelona &middot; Remote-friendly</span>
+          <span class="hero-pill">15+ yrs backend architecture</span>
+          <span class="hero-pill">Distributed systems</span>
+          <span class="hero-pill">Application security</span>
+          <span class="hero-pill">JVM &middot; Kotlin &middot; Kafka</span>
+        </div>
+      </div>
+
+      <div class="about-bio-text">
+        {{ site.about_content | strip | markdownify }}
+      </div>
+
+      <div class="about-cta-box">
+        Hiring for a Staff Engineer, Tech Lead or Software Architect role? Reach me on <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">LinkedIn</a> or email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.
+      </div>
     </div>
   </div>
 </div>
