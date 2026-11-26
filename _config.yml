@@ -39,6 +39,9 @@ additional_links:
 - title: Snodra — open-source messaging stack
   icon: fas fa-project-diagram
   url: https://snodra.damoreira.com
+- title: Download CV (PDF)
+  icon: fas fa-file-pdf
+  url: /assets/curriculum_vitae.pdf
 # - title: another link
 #   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
 #   url: Link url (eg. https://google.com)

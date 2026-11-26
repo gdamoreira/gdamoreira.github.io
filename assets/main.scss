@@ -4,6 +4,35 @@
 
 @import 'modern-resume-theme';
 
+.header-right .icons {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 8px;
+  margin-bottom: 12px;
+
+  li {
+    padding-left: 0 !important;
+  }
+
+  .button.button--sacnite {
+    width: 48px !important;
+    height: 48px !important;
+
+    i {
+      font-size: 24px !important;
+      line-height: 48px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-right .icons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
 // Compact education list
 .edu-list {
   text-align: left;
