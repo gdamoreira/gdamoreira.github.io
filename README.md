@@ -7,8 +7,8 @@
 <p align="center">The web CV of Guilherme D'Amoreira, Senior Software Engineer.</p>
 
 <p align="center">
-  <a href="https://damoreira.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fdamoreira.com&style=for-the-badge&label=damoreira.com" alt="Website status"></a>
-  <a href="https://github.com/gdamoreira/gdamoreira.github.io/commits/master"><img src="https://img.shields.io/github/last-commit/gdamoreira/gdamoreira.github.io?style=for-the-badge" alt="Last commit"></a>
+  <a href="https://damoreira.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fdamoreira.com&style=for-the-badge&label=damoreira.com&up_message=online" alt="Website status"></a>
+  <a href="https://github.com/gdamoreira/gdamoreira.github.io/commits/master"><img src="https://img.shields.io/github/last-commit/gdamoreira/gdamoreira.github.io/master?style=for-the-badge" alt="Last commit"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge" alt="License: GPL-3.0"></a>
 </p>
 
