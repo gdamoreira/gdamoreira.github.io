@@ -83,7 +83,7 @@ content:
           description: "CTO at Reticomm for two years, managing cloud infrastructure, architecture, and product delivery while aligning engineering roadmaps with business milestones."
         - tag: "OPEN SOURCE"
           title: "Author of Snodra"
-          description: 'Creator and maintainer of <a href="https://snodra.damoreira.com" target="_blank" rel="noopener noreferrer">Snodra</a>, an open-source messaging stack featuring a stateless Rust router, multi-language client libraries (Kotlin, Rust, Go), and a protocol test suite.'
+          description: 'Creator and maintainer of <a href="https://snodra.damoreira.com" target="_blank" rel="noopener noreferrer">Snodra</a>, an open-source messaging stack featuring a stateless Rust router, multi-language client libraries (Kotlin, Rust, Go, Python), and a protocol test suite.'
         - tag: "VETTING"
           title: "Vetted and certified"
           description: "Member of the Toptal network since 2021, with Black Hat certifications in API security, security automation, and practical malware analysis."
@@ -129,14 +129,14 @@ content:
           I handle the system design, wire protocol, and documentation:
 
           - **Snodra Server:** a stateless gRPC router and control plane written in Rust with zero persistent state, allowing horizontal scaling without cluster coordination.
-          - **Client libraries:** Kotlin with a Spring Boot starter (published to Maven Central), Rust (crates.io), and Go.
+          - **Client libraries:** Kotlin with a Spring Boot starter (published to Maven Central), Rust (crates.io), Go, and Python, with Node.js and C# on the roadmap.
           - **Protocol test suite:** an automated conformance suite that validates client behavior against live server instances.
           - **Pluggable storage:** Kafka or RabbitMQ Streams for events; PostgreSQL, MySQL, or MongoDB for outbox storage.
           - **Security:** token, OAuth2/OIDC, and mTLS support with per-service access controls.
 
           The project is open source and released under Apache-2.0. Source: [github.com/snodra](https://github.com/snodra).
 
-          **Stack:** Rust, tonic, gRPC, Kotlin, Spring Boot, Go, Apache Kafka, RabbitMQ Streams, PostgreSQL, MySQL, MongoDB, OpenTelemetry, Docker
+          **Stack:** Rust, tonic, gRPC, Kotlin, Spring Boot, Go, Python, Apache Kafka, RabbitMQ Streams, PostgreSQL, MySQL, MongoDB, OpenTelemetry, Docker
 
       - layout: top-middle
         title: Charlie — the 3D render farm behind Decora's US$100 million exit
@@ -354,7 +354,7 @@ content:
     content: |
       Outside work, I enjoy building software projects, classic gaming, reading, and practicing martial arts.
 
-      **Side projects & open source.** Side projects are where I experiment with new tools and ideas. [Snodra](https://snodra.damoreira.com) is my primary project: an open-source messaging framework where I explored Rust, protocol design, and multi-language client library development in Kotlin and Go.
+      **Side projects & open source.** Side projects are where I experiment with new tools and ideas. [Snodra](https://snodra.damoreira.com) is my primary project: an open-source messaging framework where I explored Rust, protocol design, and multi-language client library development across Kotlin, Python, and Go.
 
       **Game preservation.** I have a long-standing interest in classic video games and software preservation. I built [ROMs em Português](https://damoreira.com/romsportugues-catalog/), a fast, searchable web catalog indexing 1,800+ community-translated games across 16 retro consoles, built with vanilla HTML, CSS, and JavaScript.
 
