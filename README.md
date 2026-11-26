@@ -4,7 +4,7 @@
 
 <h1 align="center">damoreira.com</h1>
 
-<p align="center">The web CV of Guilherme D'Amoreira, Staff / Senior Software Engineer.</p>
+<p align="center">The web CV of Guilherme D'Amoreira, Senior Software Engineer.</p>
 
 <p align="center">
   <a href="https://damoreira.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fdamoreira.com&style=for-the-badge&label=damoreira.com" alt="Website status"></a>

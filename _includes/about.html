@@ -2,8 +2,10 @@
   <h3 id="{{ site.about_title | slugify | default: 'about-me' }}">{{ site.about_title | default: "About Me" }}</h3>
   <div class="row clearfix">
     {%- if site.about_profile_image -%}
-      <div class="col-xs-12 col-sm-4 col-md-3 no-print about-left-col">
-        <span class="profile-img" style="background-image: url({{ site.about_profile_image | relative_url }})"></span>
+      <div class="col-xs-12 col-sm-4 col-md-3 about-left-col">
+        <span class="profile-img" style="background-image: url({{ site.about_profile_image | relative_url }})">
+          <img src="{{ site.about_profile_image | relative_url }}" alt="{{ site.name }}" class="profile-img-print" />
+        </span>
         <div class="about-profile-links">
           {%- if site.linkedin_username -%}
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="about-profile-link">
@@ -21,7 +23,7 @@
         {%- include toptal-badge.html -%}
       </div>
     {%- else -%}
-      <div class="col-xs-12 col-sm-4 col-md-3 no-print about-left-col">
+      <div class="col-xs-12 col-sm-4 col-md-3 about-left-col">
         <div class="about-profile-links">
           {%- if site.linkedin_username -%}
             <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="about-profile-link">
