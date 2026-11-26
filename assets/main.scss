@@ -187,16 +187,17 @@
 }
 
 // -------------------------------------------------------------
-// 2. Career highlights section styles
+// 2. Career highlights and Core competencies section styles
 // -------------------------------------------------------------
-.career-highlights-container {
+.career-highlights-container,
+.competencies-container {
   margin-top: 30px;
 }
 
 .highlights-subtitle {
   text-align: center;
   font-size: 1.5rem;
-  color: #475569;
+  color: #555555;
   margin: -8px 0 24px 0;
   line-height: 1.5;
 }
@@ -204,7 +205,7 @@
 .highlight-lead-card {
   background: #ffffff;
   border: 1px solid #e2e8f0;
-  border-left: 4px solid #1d4ed8;
+  border-left: 4px solid #111111;
   border-radius: 10px;
   padding: 22px 26px;
   margin-bottom: 20px;
@@ -214,8 +215,9 @@
 .highlight-tag {
   display: inline-block;
   align-self: flex-start;
-  background: #eff6ff;
-  color: #1d4ed8;
+  background: #f1f5f9;
+  color: #111111;
+  border: 1px solid #e2e8f0;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -226,7 +228,7 @@
 }
 
 .highlight-lead-title {
-  color: #1d4ed8;
+  color: #111111;
   font-size: 2.1rem;
   font-weight: 700;
   margin: 0 0 8px 0;
@@ -234,7 +236,7 @@
 }
 
 .highlight-lead-text {
-  color: #334155;
+  color: #333333;
   font-size: 1.5rem;
   line-height: 1.6;
   margin: 0;
@@ -259,12 +261,12 @@
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
 }
 
 .highlight-grid-title {
-  color: #1d4ed8;
+  color: #111111;
   font-size: 1.65rem;
   font-weight: 700;
   margin: 0 0 10px 0;
@@ -272,17 +274,18 @@
 }
 
 .highlight-grid-text {
-  color: #334155;
+  color: #333333;
   font-size: 1.4rem;
   line-height: 1.55;
   margin: 0;
 
   a {
-    color: #1d4ed8;
+    color: #111111;
+    font-weight: 600;
     text-decoration: underline;
 
     &:hover {
-      color: #1e40af;
+      color: #0a66c2;
     }
   }
 }
@@ -302,7 +305,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #334155;
+  color: #333333;
   font-weight: 500;
   text-decoration: none;
 
@@ -312,7 +315,7 @@
   }
 
   &:hover {
-    color: #1d4ed8;
+    color: #111111;
     text-decoration: underline;
   }
 }
