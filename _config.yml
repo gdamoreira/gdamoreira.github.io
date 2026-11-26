@@ -70,8 +70,8 @@ content:
         description: "Tech lead on the 3D production platform that took Decora from about 15 people to over 150 and to its acquisition by CreativeDrive — the second-largest Brazilian tech deal of 2018."
       cards:
         - tag: "DISTRIBUTED SYSTEMS"
-          title: "Real-time platform architecture"
-          description: "Architected and led the IoT ingestion and calculation pipelines at Beyonnex that turn continuous meter telemetry into heating consumption and billing for German real estate portfolios, replacing manual batch processes."
+          title: "Real-time platform engineering"
+          description: "Led the development of IoT ingestion and calculation pipelines at Beyonnex that turn continuous meter telemetry into heating consumption and billing for German real estate portfolios, replacing manual batch processes."
         - tag: "APPLICATION SECURITY"
           title: "Security built into engineering"
           description: "At Oracle (NetSuite), architected the internal static analysis and code-auditing tools that sped up vulnerability detection across large enterprise codebases, and mentored engineering teams on secure design."
@@ -145,16 +145,16 @@ content:
       - layout: left
         title: Beyonnex.io
         link: beyonnex.io
-        sub_title: Senior Software Engineer · Backend Architecture
+        sub_title: Senior Software Engineer
         caption: August 2025 - Present
         quote: >
-          Architecting the real-time IoT pipelines that turn meter telemetry into heating consumption and transparent billing across German real estate portfolios.
+          Leading development on the real-time IoT platform that calculates heating consumption and costs across German real estate portfolios.
         description: |
-          I returned to Beyonnex in August 2025 to the platform I helped build from its first version in 2023, now with ownership of its backend architecture.
+          Returned to Beyonnex in August 2025 as a Senior Software Engineer to lead development on the platform that calculates tenant costs in real time, replacing complex localized batch processes with transparent, live billing.
 
-          - **Architectural ownership:** architected and led the development of real-time IoT data ingestion and calculation pipelines that process continuous telemetry to compute residential heating consumption and billing.
-          - **Event-driven scalability:** designed resilient, low-latency microservices in Kotlin, Quarkus and Apache Kafka, replacing legacy manual batch processes with automated real-time cost estimates and customer analytics.
-          - **Engineering standards:** established clean architectural patterns, automated testing practices and CI/CD workflows across backend services, improving deployment reliability and observability.
+          - **Real-time calculation engine:** led the development of core calculation services and data ingestion pipelines, converting continuous IoT meter telemetry into accurate consumption data and cost estimations.
+          - **Resilient event streaming:** developed and scaled low-latency microservices in Kotlin, Quarkus, and Apache Kafka, ensuring high availability, fault tolerance, and data integrity as building volume expands.
+          - **Engineering standards:** drove testing practices, CI/CD automation, and maintainability across backend services, ensuring scalable delivery to meet client and stakeholder needs.
 
           **Stack:** Kotlin, Quarkus, Apache Kafka, PostgreSQL, Docker, Gradle
 
@@ -180,12 +180,12 @@ content:
         sub_title: Senior Software Engineer
         caption: November 2023 - December 2024
         quote: >
-          Built the foundation of a real-time heating-cost platform for the German market.
+          Developed real-time calculation services to modernize heating consumption billing in Germany.
         description: |
-          I joined Beyonnex to help replace the manual, regionally customized systems used to calculate heating costs in Germany.
+          Joined Beyonnex to develop and implement the backend services aimed at modernizing Germany's heat consumption calculation from manual, localized processes to an automated IoT platform.
 
-          - **Core platform foundation:** designed and implemented the foundational backend services and event-streaming pipelines for real-time IoT energy consumption tracking and tenant billing transparency.
-          - **System modernization:** integrated heterogeneous IoT device protocols into a unified Quarkus and Kafka microservices ecosystem, keeping the data accurate and the system fault tolerant as volume grew.
+          - **Consumption & cost calculation:** developed the backend services that process daily IoT meter data to compute heating consumption and costs in real time, giving users direct visibility and control over their environments.
+          - **Event-driven microservices:** built scalable ingestion pipelines using Kotlin, Quarkus, and Apache Kafka, integrating IoT device data into a reliable, distributed processing ecosystem.
 
           **Stack:** Kotlin, Quarkus, Apache Kafka, PostgreSQL, Gradle
 
