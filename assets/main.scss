@@ -561,29 +561,35 @@ body.og-mode {
   }
 
   @page {
-    margin: 12mm 15mm;
+    margin: 8mm 3mm;
     size: A4 portrait;
   }
 
-  body {
-    font-size: 1rem !important;
+  html, body {
+    width: 100% !important;
+    min-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    zoom: 0.72;
+    background: #ffffff !important;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .header-container {
-    margin-top: 10px !important;
+    margin-top: 15px !important;
 
     .header-left {
       width: 65% !important;
       float: left !important;
       text-align: left !important;
-
-      h1 {
-        font-size: 3.2rem !important;
-      }
-
-      h2 {
-        font-size: 1.7rem !important;
-      }
     }
 
     .header-right {
@@ -594,15 +600,10 @@ body.og-mode {
       .icons {
         display: none !important;
       }
-
-      p {
-        margin-bottom: 2px !important;
-        font-size: 1.4rem !important;
-      }
     }
   }
 
-  // Restore the left column in About Me
+  // Restore the left column in About Me exactly as on desktop
   .about-left-col {
     display: block !important;
     width: 25% !important;
@@ -610,9 +611,9 @@ body.og-mode {
 
     .profile-img {
       display: block !important;
-      width: 160px !important;
-      height: 160px !important;
-      margin: 0 auto 14px !important;
+      width: 180px !important;
+      height: 180px !important;
+      margin: 0 auto 16px !important;
       background-image: none !important;
       overflow: hidden !important;
       border-radius: 50% !important;
@@ -632,30 +633,21 @@ body.og-mode {
 
     #r {
       display: flex !important;
-      transform: scale(0.9);
-      transform-origin: top center;
     }
   }
 
-  .about-right-col,
-  .col-print-12.about-right-col {
+  .about-right-col {
     width: 75% !important;
     float: left !important;
   }
 
-  .about-profile-links,
-  .profile-links {
-    display: flex !important;
-  }
-
-  // Restore 2-column layout for list entries (Experience, Projects)
+  // Exact 2-column layout for list entries (Experience, Projects)
   .layout {
     display: flex !important;
     flex-direction: row !important;
-    margin-top: 1.8rem !important;
+    margin-top: 2rem !important;
 
-    .details,
-    .details.col-print-12 {
+    .details {
       width: 25% !important;
       display: flex !important;
       flex-direction: column !important;
@@ -663,8 +655,7 @@ body.og-mode {
       text-align: left !important;
     }
 
-    .content,
-    .content.col-print-12 {
+    .content {
       width: 75% !important;
       float: left !important;
     }
@@ -674,7 +665,7 @@ body.og-mode {
   .highlights-grid {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 12px !important;
+    gap: 18px !important;
   }
 
   // Prevent awkward page breaks inside cards and entries
