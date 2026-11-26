@@ -1,0 +1,28 @@
+{%- assign c = include.content -%}
+<div class="get-in-touch-box">
+  <p class="get-in-touch-pitch">
+    {{ c.pitch | default: c.description | markdownify | remove: '<p>' | remove: '</p>' }}
+  </p>
+
+  <div class="get-in-touch-linkedin">
+    {%- if site.linkedin_username -%}
+      <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer" class="get-in-touch-linkedin-link">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        <span>{{ c.linkedin_text | default: "Connect on LinkedIn" }}</span>
+      </a>
+    {%- endif -%}
+  </div>
+
+  <div class="get-in-touch-action">
+    {%- if site.email -%}
+      <a href="mailto:{{ site.email }}" class="get-in-touch-btn">
+        <i class="far fa-envelope" aria-hidden="true"></i>
+        <span>{{ c.button_text | default: "Email Guilherme" }}</span>
+      </a>
+    {%- endif -%}
+  </div>
+
+  <div class="get-in-touch-direct">
+    Direct: <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+  </div>
+</div>
