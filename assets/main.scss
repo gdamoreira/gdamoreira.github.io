@@ -547,3 +547,145 @@ body.og-mode {
   }
 }
 
+.profile-img-print {
+  display: none;
+}
+
+// -------------------------------------------------------------
+// Print / PDF Export Styles (keeping full formatting)
+// -------------------------------------------------------------
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  @page {
+    margin: 12mm 15mm;
+    size: A4 portrait;
+  }
+
+  body {
+    font-size: 1rem !important;
+  }
+
+  .header-container {
+    margin-top: 10px !important;
+
+    .header-left {
+      width: 65% !important;
+      float: left !important;
+      text-align: left !important;
+
+      h1 {
+        font-size: 3.2rem !important;
+      }
+
+      h2 {
+        font-size: 1.7rem !important;
+      }
+    }
+
+    .header-right {
+      width: 35% !important;
+      float: right !important;
+      text-align: right !important;
+
+      .icons {
+        display: none !important;
+      }
+
+      p {
+        margin-bottom: 2px !important;
+        font-size: 1.4rem !important;
+      }
+    }
+  }
+
+  // Restore the left column in About Me
+  .about-left-col {
+    display: block !important;
+    width: 25% !important;
+    float: left !important;
+
+    .profile-img {
+      display: block !important;
+      width: 160px !important;
+      height: 160px !important;
+      margin: 0 auto 14px !important;
+      background-image: none !important;
+      overflow: hidden !important;
+      border-radius: 50% !important;
+    }
+
+    .profile-img-print {
+      display: block !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+      border-radius: 50% !important;
+    }
+
+    .about-profile-links {
+      display: flex !important;
+    }
+
+    #r {
+      display: flex !important;
+      transform: scale(0.9);
+      transform-origin: top center;
+    }
+  }
+
+  .about-right-col,
+  .col-print-12.about-right-col {
+    width: 75% !important;
+    float: left !important;
+  }
+
+  .about-profile-links,
+  .profile-links {
+    display: flex !important;
+  }
+
+  // Restore 2-column layout for list entries (Experience, Projects)
+  .layout {
+    display: flex !important;
+    flex-direction: row !important;
+    margin-top: 1.8rem !important;
+
+    .details,
+    .details.col-print-12 {
+      width: 25% !important;
+      display: flex !important;
+      flex-direction: column !important;
+      float: left !important;
+      text-align: left !important;
+    }
+
+    .content,
+    .content.col-print-12 {
+      width: 75% !important;
+      float: left !important;
+    }
+  }
+
+  // Preserve 3-column grids for Career highlights & Core competencies
+  .highlights-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px !important;
+  }
+
+  // Prevent awkward page breaks inside cards and entries
+  .highlight-lead-card,
+  .highlight-grid-card,
+  .about-hero-callout,
+  .get-in-touch-box,
+  .edu-item {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+}
+
+

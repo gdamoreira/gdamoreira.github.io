@@ -6,12 +6,12 @@
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
 layout: default
-title: Guilherme D'Amoreira \| Staff / Senior Software Engineer
+title: Guilherme D'Amoreira \| Senior Software Engineer
 author:
   name: Guilherme D'Amoreira
 image: 
   path: images/og-image.png
   height: 630
   width: 1200
-  alt: "Guilherme D'Amoreira — Staff / Senior Software Engineer, Distributed Systems Architecture & Application Security"
+  alt: "Guilherme D'Amoreira — Senior Software Engineer, Distributed Systems Architecture & Application Security"
 ---
