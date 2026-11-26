@@ -352,15 +352,15 @@ content:
   - title: A Little More About Me
     layout: text
     content: |
-      Outside work, I enjoy building software projects, classic gaming, reading, and practicing martial arts.
+      I write software for a living and, most evenings, for fun. The difference is that at night nobody asks for an estimate.
 
-      **Side projects & open source.** Side projects are where I experiment with new tools and ideas. [Snodra](https://snodra.damoreira.com) is my primary project: an open-source messaging framework where I explored Rust, protocol design, and multi-language client library development across Kotlin, Python, and Go.
+      **Building things nobody asked for.** My side projects are where I learn a technology properly, by shipping something with it. [Snodra](https://snodra.damoreira.com) started that way and is now the largest: it is where I went deep on Rust, protocol design and what it takes to keep client libraries in several languages honest with each other. Kotlin and Java are still my first languages, Python is the one I reach for when something needs automating, and Rust is the one I pick when I want the compiler to argue with me.
 
-      **Game preservation.** I have a long-standing interest in classic video games and software preservation. I built [ROMs em Português](https://damoreira.com/romsportugues-catalog/), a fast, searchable web catalog indexing 1,800+ community-translated games across 16 retro consoles, built with vanilla HTML, CSS, and JavaScript.
+      **Games, old and new.** I have played video games for as long as I can remember, and I like the ones with history. That is how [ROMs em Português](https://damoreira.com/romsportugues-catalog/) came about: a catalog of 1,809 fan-made Portuguese translations across 16 consoles, from 1983 to 2025, that I generated from the community index at romsportugues.com. It is deliberately simple engineering: a static site in plain HTML, CSS and JavaScript, with instant search and filters by console and genre, no framework and no tracking.
 
-      **Home lab.** I maintain a two-node Proxmox home cluster (Dell PowerEdge R820 and Intel NUC) provisioned via Terraform and Ansible. It runs Kubernetes, Apache Kafka, PostgreSQL, GitLab, and Harbor, serving as a dedicated test environment for distributed systems and tooling.
+      **A home lab that got out of hand.** Two Proxmox hosts run Kubernetes, Kafka, PostgreSQL, GitLab, Harbor and Nexus, all provisioned with Terraform and Ansible. It is where I try things before I recommend them at work, and where I break them without anyone opening an incident.
 
-      **Fitness & martial arts.** I train karate and work out regularly. Both provide discipline, patience, and balance away from the screen.
+      **Away from the keyboard.** Karate and the gym keep me honest: both reward showing up consistently more than talent, which is also how I think good engineering teams work. The rest of the time goes to reading and to whatever technology I have decided to understand next.
 
   - title: Get in touch
     layout: get-in-touch
@@ -392,4 +392,3 @@ exclude:
   - docker-compose.yml
   - node_modules
   - vendor
-  - docs
